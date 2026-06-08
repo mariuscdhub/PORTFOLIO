@@ -103,6 +103,12 @@
             display: none;
         }
 
+        .project-card-magic {
+            transform: translateZ(0);
+            -webkit-transform: translateZ(0);
+            -webkit-mask-image: -webkit-radial-gradient(white, black);
+        }
+
         .tech-pill {
             @apply px-3 py-1 bg-white/5 border border-white/10 rounded-full text-xs font-mono text-textMuted hover:border-white/30 transition-colors cursor-default;
         }
@@ -149,9 +155,7 @@
                     </p>
                 </div>
 
-                <p class="text-lg md:text-xl text-textMuted max-w-2xl leading-relaxed">
-                    Actuellement en BUT GEII, je construis mon avenir avec une ambition précise : devenir expert en automatisme et informatique industrielle. Jetez-y un œil !
-                </p>
+
 
             </div>
 
@@ -159,8 +163,8 @@
             <div class="lg:col-span-4 flex justify-center lg:justify-end">
                 <div class="relative group">
                     <div class="absolute -inset-1 bg-gradient-to-r from-blue-500 to-purple-600 rounded-3xl blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
-                    <div class="relative w-64 h-64 md:w-80 md:h-80 rounded-3xl overflow-hidden border border-white/10 shadow-2xl">
-                        <img src="./data/pp.png" alt="Marius Coudurier" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700 scale-105 group-hover:scale-100">
+                    <div class="relative w-64 md:w-80 aspect-[4/5] rounded-3xl overflow-hidden border border-white/10 shadow-2xl bg-black/40">
+                        <img src="./data/photo.jpg" alt="Marius Coudurier" class="w-full h-full object-cover object-center grayscale hover:grayscale-0 transition-all duration-700">
                     </div>
                 </div>
             </div>
@@ -387,7 +391,7 @@
 
                 <!-- PROJET SAE -->
                 <div onclick="openPage('saePage', 'Système Embarqué')"
-                    class="project-card-magic cursor-pointer group relative md:col-span-2 bg-surface rounded-3xl overflow-hidden border border-border hover:border-blue-500/50 transition-all duration-500 hover:shadow-[0_0_30px_rgba(59,130,246,0.15)]"
+                    class="project-card-magic cursor-pointer group relative md:col-span-1 bg-surface rounded-3xl overflow-hidden border border-border hover:border-blue-500/50 transition-all duration-500 hover:shadow-[0_0_30px_rgba(59,130,246,0.15)]"
                     data-glow-color="59, 130, 246">
                     <div
                         class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent z-10 pointer-events-none">
@@ -416,7 +420,7 @@
 
                 <!-- ROBOT SUMO : IMAGE CORRIGÉE (Object-Cover pour plein écran + Object-Center) -->
                 <div onclick="openPage('sumoPage', 'Robotique & Web')"
-                    class="project-card-magic cursor-pointer group relative bg-surface rounded-3xl overflow-hidden border border-border hover:border-orange-500/50 transition-all duration-500 hover:shadow-[0_0_30px_rgba(249,115,22,0.15)]"
+                    class="project-card-magic cursor-pointer group relative md:col-span-1 bg-surface rounded-3xl overflow-hidden border border-border hover:border-orange-500/50 transition-all duration-500 hover:shadow-[0_0_30px_rgba(249,115,22,0.15)]"
                     data-glow-color="249, 115, 22">
                     <!-- IMAGE PLEIN CADRE ET CENTRÉE -->
                     <img src="https://i0.wp.com/tinkerfarm.net/wp-content/uploads/sumo_twobots.png?ssl=1"
@@ -439,7 +443,7 @@
 
                 <!-- CASIERS SÉCURISÉS -->
                 <div onclick="openPage('lockerPage', 'Système Embarqué')"
-                    class="project-card-magic cursor-pointer group relative bg-surface rounded-3xl overflow-hidden border border-border hover:border-cyan-500/50 transition-all duration-500"
+                    class="project-card-magic cursor-pointer group relative md:col-span-1 bg-surface rounded-3xl overflow-hidden border border-border hover:border-cyan-500/50 transition-all duration-500"
                     data-glow-color="6, 182, 212">
                     <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1000&auto=format&fit=crop"
                         alt="Sécurité Tech"
@@ -457,9 +461,49 @@
                     </div>
                 </div>
 
+                <!-- AMBILIGHT MAISON -->
+                <div onclick="openPage('ambilightPage', 'Système Lumineux IoT')"
+                    class="project-card-magic cursor-pointer group relative md:col-span-1 bg-surface rounded-3xl overflow-hidden border border-border hover:border-yellow-500/50 transition-all duration-500 hover:shadow-[0_0_30px_rgba(234,179,8,0.15)]"
+                    data-glow-color="234, 179, 8">
+                    <img src="https://i.ibb.co/JRmm2sXX/Gemini-Generated-Image-ur39e6ur39e6ur39-cleanup.png"
+                        alt="Ambilight System"
+                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-80 group-hover:opacity-100">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 to-transparent z-10"></div>
+
+                    <div
+                        class="absolute top-8 right-8 z-20 bg-black/50 backdrop-blur-md border border-white/10 px-4 py-2 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-500 translate-y-[-10px] group-hover:translate-y-0">
+                        <span class="text-xs font-bold text-white uppercase tracking-wider">Voir le système</span>
+                    </div>
+
+                    <div class="absolute bottom-0 left-0 p-8 z-20">
+                        <h3 class="text-xl font-bold mb-1">Ambilight Maison</h3>
+                        <p class="text-textMuted text-sm">2024 • IoT • ESP8266</p>
+                    </div>
+                </div>
+
+                <!-- SMART SPEAKER -->
+                <div onclick="openPage('smartSpeakerPage', 'Audio & Menuiserie')"
+                    class="project-card-magic cursor-pointer group relative md:col-span-2 bg-surface rounded-3xl overflow-hidden border border-border hover:border-pink-500/50 transition-all duration-500 hover:shadow-[0_0_30px_rgba(236,72,153,0.15)]"
+                    data-glow-color="236, 72, 153">
+                    <img src="./data/présantaion .png"
+                        alt="Google Home Upgrade"
+                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-80 group-hover:opacity-100">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 to-transparent z-10"></div>
+
+                    <div
+                        class="absolute top-8 right-8 z-20 bg-black/50 backdrop-blur-md border border-white/10 px-4 py-2 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-500 translate-y-[-10px] group-hover:translate-y-0">
+                        <span class="text-xs font-bold text-white uppercase tracking-wider">Voir le projet</span>
+                    </div>
+
+                    <div class="absolute bottom-0 left-0 p-8 z-20">
+                        <h3 class="text-xl font-bold mb-1">Google Home Upgrade</h3>
+                        <p class="text-textMuted text-sm">2024 • Audio • Menuiserie</p>
+                    </div>
+                </div>
+
                 <!-- MAKER -->
                 <div onclick="openPage('makerPage', 'Maker & Domotique')"
-                    class="project-card-magic cursor-pointer group relative md:col-span-2 bg-[#F5F5F7] rounded-3xl overflow-hidden border border-border hover:border-purple-500/50 transition-all duration-500"
+                    class="project-card-magic cursor-pointer group relative md:col-span-1 bg-[#F5F5F7] rounded-3xl overflow-hidden border border-border hover:border-purple-500/50 transition-all duration-500"
                     data-glow-color="168, 85, 247">
                     <div class="w-full h-full flex items-center justify-center relative overflow-hidden">
                         <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=2000&auto=format&fit=crop"
@@ -534,10 +578,22 @@
                         </h2>
                         <ul class="text-textMuted leading-relaxed mb-6 list-disc list-inside space-y-2">
                             <li><strong>Interventions en écoles :</strong> Animation d'ateliers scientifiques (ondes radio, antennes VHF/UHF) pour les élèves et les professeurs.</li>
-                            <li><strong>Contenu pédagogique :</strong> Réalisation, avec mon camarade Valentin Moustey, d'une vidéo explicative pour apprendre aux professeurs des écoles à se servir de talkies-walkies. Ces appareils ont été distribués suite à nos visites pour permettre aux écoles qui n'ont pas pu se déplacer d'écouter l'ISS le jour de la communication.</li>
+                            <li><strong>Création Audiovisuelle :</strong> Scénarisation, tournage et montage complet d'une vidéo éducative. Présentée par Valentin Moustey, elle explique concrètement aux professeurs et aux élèves comment utiliser un talkie-walkie pour écouter l'ISS depuis leur école.</li>
                             <li><strong>Communication événementielle :</strong> Conception des affiches promotionnelles avec un QR code menant à un site interactif développé par mes soins (informations sur l'ISS, vue 3D).</li>
                             <li><strong>Gestion d'événement :</strong> Accueil des journalistes, des élèves et des personnalités importantes. Coordination post-questions lors de l'échange radio en direct (QSO) avec l'ISS.</li>
                         </ul>
+
+                        <div class="mt-6 mb-8 rounded-2xl overflow-hidden border border-white/10 shadow-[0_0_30px_rgba(168,85,247,0.15)] bg-surfaceHover p-2">
+                            <h3 class="text-white font-bold mb-3 ml-2 flex items-center gap-2"><i data-lucide="youtube" class="text-red-500 w-5 h-5"></i> Vidéo Pédagogique (Réalisation et Montage)</h3>
+                            <a href="https://youtu.be/PjcDAuDPP6Q?si=muUNXP_-CF1rzlhR" target="_blank" rel="noopener noreferrer" class="relative block w-full aspect-video rounded-xl overflow-hidden group cursor-pointer border border-white/5">
+                                <img src="https://img.youtube.com/vi/PjcDAuDPP6Q/maxresdefault.jpg" alt="Miniature vidéo" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                                <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors flex items-center justify-center">
+                                    <div class="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center shadow-[0_0_20px_rgba(220,38,38,0.5)] group-hover:scale-110 group-hover:bg-red-500 transition-all">
+                                        <i data-lucide="play" class="w-8 h-8 text-white fill-white ml-1"></i>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
 
                         <h2 class="text-xl font-bold text-white mb-4 mt-8 flex items-center gap-3">
                             <i data-lucide="lightbulb" class="text-purple-400 w-6 h-6"></i> Compétences Acquises
@@ -606,6 +662,56 @@
     <footer class="py-12 flex flex-col md:flex-row justify-between items-center gap-6 text-sm text-textMuted w-full max-w-6xl z-10 mt-auto">
         <p>&copy; 2026 Marius Coudurier.</p>
     </footer>
+
+    <!-- ================= PAGE AMBILIGHT ================= -->
+    <main id="ambilightPage" class="hidden-page w-full max-w-7xl mt-24 space-y-24 z-20 pb-24">
+        <header class="animate-slide-up relative overflow-hidden bg-surface border border-border rounded-3xl p-8 md:p-12">
+            <div class="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-yellow-900/10 to-transparent pointer-events-none"></div>
+            
+            <div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-12">
+                <div class="lg:col-span-8 space-y-8">
+                    <div>
+                        <span class="text-sm font-bold text-yellow-400 uppercase tracking-wider mb-2 block">Système Lumineux IoT</span>
+                        <h1 class="text-4xl md:text-5xl font-bold mb-4 tracking-tight leading-tight">
+                            Système Ambilight Maison
+                        </h1>
+                        <p class="text-yellow-500 font-medium flex items-center gap-2">
+                            <i data-lucide="lightbulb" class="w-5 h-5"></i> Alternative haute performance aux écosystèmes fermés.
+                        </p>
+                    </div>
+
+                    <div class="max-w-4xl prose prose-invert">
+                        <h2 class="text-2xl font-bold text-white mb-4 mt-8 flex items-center gap-3">
+                            <i data-lucide="info" class="text-yellow-400 w-6 h-6"></i> Résumé du Projet
+                        </h2>
+                        <p class="text-textMuted leading-relaxed mb-6">
+                            Ingénierie d'un système lumineux connecté (IoT) piloté par microcontrôleur. Une alternative haute performance aux écosystèmes fermés, réalisée pour moins de 15€.
+                        </p>
+
+                        <h2 class="text-xl font-bold text-white mb-4 mt-8 flex items-center gap-3">
+                            <i data-lucide="cpu" class="text-yellow-400 w-6 h-6"></i> Intégration Hardware & WLED
+                        </h2>
+                        <p class="text-textMuted leading-relaxed mb-6">
+                            L'architecture matérielle repose sur un microcontrôleur ESP8266 (Wemos D1 Mini), choisi pour sa connectivité Wi-Fi native et sa compatibilité parfaite avec l'écosystème open-source WLED. Le système intègre des rubans LED WS2812B haute densité. J'ai réalisé des soudures de précision aux angles de l'écran pour garantir une continuité parfaite du ruban, ainsi qu'un circuit d'alimentation 5V sur-mesure capable de supporter les pics d'intensité importants lors des flashs lumineux, sans risque de chute de tension.
+                        </p>
+
+                        <h2 class="text-xl font-bold text-white mb-4 mt-8 flex items-center gap-3">
+                            <i data-lucide="wifi" class="text-yellow-400 w-6 h-6"></i> Protocole Réseau UDP
+                        </h2>
+                        <p class="text-textMuted leading-relaxed mb-6">
+                            Pour assurer une synchronisation sans faille entre l'image affichée sur le PC et les LEDs, le système s'appuie sur le transfert de paquets UDP à haute fréquence via le réseau local. Ce flux de données non bloquant garantit une colorimétrie dynamique à plus de 60 images par seconde avec une latence quasi-nulle. L'immersion est instantanée, surpassant la réactivité de nombreuses solutions commerciales propriétaires.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-4 flex flex-col items-center pt-8 gap-6">
+                    <div class="relative w-full rounded-2xl overflow-hidden shadow-[0_0_30px_rgba(234,179,8,0.2)] border border-white/10 group">
+                        <img src="https://i.ibb.co/JRmm2sXX/Gemini-Generated-Image-ur39e6ur39e6ur39-cleanup.png" alt="Ambilight System" class="w-full h-auto object-cover group-hover:scale-105 transition-all duration-500">
+                    </div>
+                </div>
+            </div>
+        </header>
+    </main>
 
     <!-- ================= PAGE CALTRACKER ================= -->
     <main id="caltrackerPage" class="hidden-page w-full max-w-7xl mt-24 space-y-24 z-20 pb-24">
@@ -1231,6 +1337,94 @@
         </div>
     </div>
 
+    <!-- ================= PAGE SMART SPEAKER ================= -->
+    <main id="smartSpeakerPage" class="hidden-page w-full max-w-7xl mt-24 space-y-24 z-20 pb-24">
+        <header class="animate-slide-up relative overflow-hidden bg-surface border border-border rounded-3xl p-8 md:p-12">
+            <div class="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-pink-900/10 to-transparent pointer-events-none"></div>
+            
+            <div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-12">
+                <div class="lg:col-span-8 space-y-8">
+                    <div>
+                        <span class="text-sm font-bold text-pink-400 uppercase tracking-wider mb-2 block">Audio & Menuiserie</span>
+                        <h1 class="text-4xl md:text-5xl font-bold mb-4 tracking-tight leading-tight">
+                            Google Home Upgrade : Hack Audio IoT
+                        </h1>
+                        <p class="text-pink-500 font-medium flex items-center gap-2">
+                            <i data-lucide="speaker" class="w-5 h-5"></i> Optimisation acoustique d'un assistant connecté
+                        </p>
+                    </div>
+
+                    <div class="max-w-4xl prose prose-invert">
+                        <p class="text-textMuted leading-relaxed mb-6 text-lg">
+                            <strong>Pitch :</strong> Optimisation acoustique d'un assistant connecté (Google Home Mini) par le repiquage de son amplification interne vers des enceintes bibliothèques Philips haut de gamme, et conception/fabrication d'un meuble dédié pour intégrer proprement l'ensemble du système.
+                        </p>
+
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+                            <div class="bg-surfaceHover p-4 rounded-xl border border-white/10">
+                                <i data-lucide="cpu" class="text-pink-400 w-6 h-6 mb-2"></i>
+                                <h4 class="font-bold text-white text-sm mb-1">Composants IoT</h4>
+                                <p class="text-xs text-textMuted">Google Home Mini (détourné), 2x enceintes Philips.</p>
+                            </div>
+                            <div class="bg-surfaceHover p-4 rounded-xl border border-white/10">
+                                <i data-lucide="ruler" class="text-pink-400 w-6 h-6 mb-2"></i>
+                                <h4 class="font-bold text-white text-sm mb-1">Modélisation 3D (CAO)</h4>
+                                <p class="text-xs text-textMuted">Plans numériques et dimensionnels du meuble.</p>
+                            </div>
+                            <div class="bg-surfaceHover p-4 rounded-xl border border-white/10">
+                                <i data-lucide="hammer" class="text-pink-400 w-6 h-6 mb-2"></i>
+                                <h4 class="font-bold text-white text-sm mb-1">Fabrication</h4>
+                                <p class="text-xs text-textMuted">Découpe de panneaux, outillage, fer à souder.</p>
+                            </div>
+                        </div>
+
+                        <h2 class="text-xl font-bold text-white mb-4 mt-8 flex items-center gap-3">
+                            <i data-lucide="settings" class="text-pink-400 w-6 h-6"></i> Hack Matériel (Détournement)
+                        </h2>
+                        <ul class="text-textMuted leading-relaxed mb-6 list-disc list-inside space-y-2">
+                            <li>Désassemblage complet du Google Home Mini pour isoler la carte électronique et le haut-parleur d'origine.</li>
+                            <li>Repiquage et soudure des câbles audio directement sur les sorties de l'amplificateur intégré vers le câblage passif des enceintes Philips.</li>
+                        </ul>
+
+                        <h2 class="text-xl font-bold text-white mb-4 mt-8 flex items-center gap-3">
+                            <i data-lucide="box" class="text-pink-400 w-6 h-6"></i> Modélisation Numérique & Plans
+                        </h2>
+                        <ul class="text-textMuted leading-relaxed mb-6 list-disc list-inside space-y-2">
+                            <li>Réalisation de <strong>plans numériques</strong> pour valider l'ergonomie, l'esthétique et la gestion spatiale.</li>
+                            <li><strong>Épaisseur du bois :</strong> Calculée pour assurer la rigidité structurelle et éviter les vibrations parasites.</li>
+                            <li><strong>Volume utile :</strong> Ajustement au millimètre pour un encastrement parfait des enceintes.</li>
+                        </ul>
+
+                        <h2 class="text-xl font-bold text-white mb-4 mt-8 flex items-center gap-3">
+                            <i data-lucide="wrench" class="text-pink-400 w-6 h-6"></i> Logistique, Usinage et Assemblage
+                        </h2>
+                        <ul class="text-textMuted leading-relaxed mb-6 list-disc list-inside space-y-2">
+                            <li>Exploitation des cotes numériques pour la découpe précise des panneaux de bois.</li>
+                            <li>Perçage de passages de câbles invisibles pour les liaisons audio et l'alimentation.</li>
+                            <li>Méthodes de fixation (vissage invisible / tourillons) pour garantir la stabilité et l'accessibilité de maintenance.</li>
+                        </ul>
+
+                        <h2 class="text-xl font-bold text-white mb-4 mt-8 flex items-center gap-3">
+                            <i data-lucide="check-circle" class="text-pink-400 w-6 h-6"></i> Compétences Validées
+                        </h2>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="tech-pill">Modélisation 3D (CAO)</span>
+                            <span class="tech-pill">Menuiserie & Usinage</span>
+                            <span class="tech-pill">Génie Électrique</span>
+                            <span class="tech-pill">Reverse Engineering</span>
+                            <span class="tech-pill">Soudure fine PCB</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-4 flex flex-col items-center pt-8 gap-6">
+                    <div class="relative w-full rounded-2xl overflow-hidden shadow-[0_0_30px_rgba(236,72,153,0.2)] border border-white/10 group">
+                        <img src="./data/présantaion .png" alt="Google Home Upgrade" class="w-full h-auto object-cover group-hover:scale-105 transition-all duration-500">
+                    </div>
+                </div>
+            </div>
+        </header>
+    </main>
+
     <!-- ================= PAGE MAKER & DOMOTIQUE (Même code conservé) ================= -->
     <main id="makerPage" class="hidden-page w-full max-w-5xl mt-24 space-y-16 z-20 pb-24">
         <!-- ... (Contenu Maker conservé tel quel) ... -->
@@ -1250,93 +1444,9 @@
             </p>
         </header>
 
-        <section class="animate-slide-up" style="animation-delay: 0.1s;">
-            <div class="bg-surface border border-border rounded-3xl overflow-hidden">
-                <div class="grid grid-cols-1 md:grid-cols-2">
-                    <div class="p-8 md:p-12 flex flex-col justify-center">
-                        <h2 class="text-3xl font-bold mb-4">Smart Speaker</h2>
-                        <p class="text-textMuted leading-relaxed mb-6">
-                            Conception d'une pièce unique fusionnant l'intelligence d'un Google Home et l'esthétique
-                            d'un mobilier haut de gamme. Design généré par IA, ingénierie acoustique et fabrication
-                            artisanale.
-                        </p>
 
-                        <div class="space-y-4 mb-8">
-                            <div class="flex items-start gap-3">
-                                <div class="bg-surfaceHover p-2 rounded-lg border border-white/10">
-                                    <i data-lucide="speaker" class="text-purple-400 w-5 h-5"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-bold text-white">Audio Haute-Fidélité</h4>
-                                    <p class="text-sm text-textMuted">Intégration de drivers Sony & Philips pour
-                                        transformer un assistant vocal standard en système sonore riche et puissant.</p>
-                                </div>
-                            </div>
-                            <div class="flex items-start gap-3">
-                                <div class="bg-surfaceHover p-2 rounded-lg border border-white/10">
-                                    <i data-lucide="pencil-ruler" class="text-orange-400 w-5 h-5"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-bold text-white">Conception & Fabrication</h4>
-                                    <p class="text-sm text-textMuted">Prise de mesures, découpe du bois sur-mesure,
-                                        assemblage électronique.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="h-64 md:h-auto bg-[#0a0a0a] relative overflow-hidden">
-                        <img src="https://i.ibb.co/S73hHJvH/Gemini-Generated-Image-lnd0i4lnd0i4lnd0-cleanup.png"
-                            class="absolute inset-0 w-full h-full object-cover opacity-80" alt="Enceinte bois DIY">
-                        <div
-                            class="absolute bottom-4 left-4 bg-black/60 backdrop-blur-sm px-3 py-1 rounded-lg border border-white/10">
-                            <span class="text-xs font-mono text-white">Inspiration: DIY Perks</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <section class="animate-slide-up" style="animation-delay: 0.2s;">
-            <div class="bg-surface border border-border rounded-3xl overflow-hidden mt-12">
-                <div class="grid grid-cols-1 md:grid-cols-2">
-                    <div
-                        class="h-80 md:h-auto bg-[#0a0a0a] relative overflow-hidden order-2 md:order-1 flex items-center justify-center p-8">
-                        <img src="https://i.ibb.co/JRmm2sXX/Gemini-Generated-Image-ur39e6ur39e6ur39-cleanup.png"
-                            class="w-full h-full object-contain object-center drop-shadow-2xl" alt="Ambilight System">
-                    </div>
-                    <div class="p-8 md:p-12 flex flex-col justify-center order-1 md:order-2">
-                        <h2 class="text-3xl font-bold mb-4">Système Ambilight Maison</h2>
-                        <p class="text-textMuted leading-relaxed mb-6">
-                            Ingénierie d'un système lumineux connecté (IoT) piloté par microcontrôleur. Une alternative
-                            haute performance aux écosystèmes fermés, réalisée pour moins de 15€.
-                        </p>
 
-                        <div class="space-y-4 mb-8">
-                            <div class="flex items-start gap-3">
-                                <div class="bg-surfaceHover p-2 rounded-lg border border-white/10">
-                                    <i data-lucide="cpu" class="text-yellow-400 w-5 h-5"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-bold text-white">Intégration Hardware & WLED</h4>
-                                    <p class="text-sm text-textMuted">Montage sur contrôleur ESP8266 (Wemos D1), soudure
-                                        des angles de rubans LED et gestion de l'alimentation 5V.</p>
-                                </div>
-                            </div>
-                            <div class="flex items-start gap-3">
-                                <div class="bg-surfaceHover p-2 rounded-lg border border-white/10">
-                                    <i data-lucide="wifi" class="text-blue-400 w-5 h-5"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-bold text-white">Protocole Réseau UDP</h4>
-                                    <p class="text-sm text-textMuted">Communication sans fil optimisée entre le PC et le
-                                        contrôleur pour un flux de données fluide et instantané.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
 
         <section class="animate-slide-up" style="animation-delay: 0.3s;">
             <div class="bg-surface border border-border rounded-3xl p-8 md:p-12 mt-12">
@@ -1771,7 +1881,7 @@
             }
             
             // Hide project overlays if any are open
-            const projectPages = ['missionSophiePage', 'caltrackerPage', 'saePage', 'sumoPage', 'lockerPage', 'makerPage'];
+            const projectPages = ['missionSophiePage', 'caltrackerPage', 'saePage', 'sumoPage', 'lockerPage', 'makerPage', 'ambilightPage', 'smartSpeakerPage'];
             projectPages.forEach(id => {
                 const p = document.getElementById(id);
                 if(p && !p.classList.contains('hidden-page')) {
