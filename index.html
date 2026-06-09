@@ -2313,6 +2313,10 @@
         }, { passive: false });
 
         document.addEventListener('DOMContentLoaded', () => {
+            // Force always returning to home page (accueil) on reload or direct link
+            if (window.location.hash) {
+                window.history.replaceState(null, null, window.location.pathname);
+            }
             handleHashChange();
             initMagicBento();
         });
