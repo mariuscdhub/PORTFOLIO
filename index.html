@@ -1323,7 +1323,7 @@
             <!-- Test 1 -->
             <div class="flex flex-col gap-4">
                 <div class="bg-surface border border-white/10 rounded-2xl overflow-hidden aspect-video">
-                    <img src="./data/vérifactaion intensité led.HEIC" alt="Intensité LED"
+                    <img src="./data/verif_intensite.heic" alt="Intensité LED"
                         class="w-full h-full object-contain bg-black/50">
                 </div>
                 <p class="text-sm text-textMuted text-center">Vérification intensité LED</p>
@@ -1332,7 +1332,7 @@
             <!-- Test 2 -->
             <div class="flex flex-col gap-4">
                 <div class="bg-surface border border-white/10 rounded-2xl overflow-hidden aspect-video">
-                    <img src="./data/vérification dimension 2.HEIC" alt="Dimension"
+                    <img src="./data/verif_dimension_2.heic" alt="Dimension"
                         class="w-full h-full object-contain bg-black/50">
                 </div>
                 <p class="text-sm text-textMuted text-center">Vérification dimensions (2)</p>
@@ -1341,7 +1341,7 @@
             <!-- Test 3 -->
             <div class="flex flex-col gap-4">
                 <div class="bg-surface border border-white/10 rounded-2xl overflow-hidden aspect-video">
-                    <img src="./data/verification dimension.HEIC" alt="Dimension"
+                    <img src="./data/verif_dimension.heic" alt="Dimension"
                         class="w-full h-full object-contain bg-black/50">
                 </div>
                 <p class="text-sm text-textMuted text-center">Vérification dimensions</p>
@@ -1350,7 +1350,7 @@
             <!-- Test 4 -->
             <div class="flex flex-col gap-4">
                 <div class="bg-surface border border-white/10 rounded-2xl overflow-hidden aspect-video">
-                    <img src="./data/test sous tension.HEIC" alt="Sous tension"
+                    <img src="./data/test_sous_tension.heic" alt="Sous tension"
                         class="w-full h-full object-contain bg-black/50">
                 </div>
                 <p class="text-sm text-textMuted text-center">Test sous tension</p>
@@ -2055,7 +2055,7 @@
             lucide.createIcons();
             
             // Conversion HEIC vers JPG (Automatique)
-            const images = gallery.querySelectorAll('img[src$=".HEIC"]');
+            const images = gallery.querySelectorAll('img[src$=".HEIC"], img[src$=".heic"]');
             for (const img of images) {
                 if (img.dataset.converted) continue;
                 try {
