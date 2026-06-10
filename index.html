@@ -67,6 +67,7 @@
         .project-card-magic {
             transition-property: border-color, box-shadow, background-color, opacity !important;
         }
+
         body {
             background-color: #050505;
             color: #EDEDED;
@@ -125,10 +126,14 @@
     <!-- ================= BARRE DE NAVIGATION ================= -->
     <nav class="fixed top-6 z-40 bg-surface/80 backdrop-blur-md border border-border rounded-full px-6 py-3 flex items-center gap-8 shadow-lg animate-fade-in transition-all duration-300"
         id="mainNav">
-        <a href="#accueil" data-tab="accueil" class="nav-link text-sm font-medium text-white transition-colors">Accueil</a>
-        <a href="#competences" data-tab="competences" class="nav-link text-sm font-medium text-textMuted hover:text-white transition-colors">Compétences</a>
-        <a href="#projets" data-tab="projets" class="nav-link text-sm font-medium text-textMuted hover:text-white transition-colors">Projets</a>
-        <a href="#contact" data-tab="contact" class="nav-link bg-transparent text-white border border-white/20 px-4 py-1.5 rounded-full text-sm font-bold hover:bg-white hover:text-black transition-colors">Contact</a>
+        <a href="#accueil" data-tab="accueil"
+            class="nav-link text-sm font-medium text-white transition-colors">Accueil</a>
+        <a href="#competences" data-tab="competences"
+            class="nav-link text-sm font-medium text-textMuted hover:text-white transition-colors">Compétences</a>
+        <a href="#projets" data-tab="projets"
+            class="nav-link text-sm font-medium text-textMuted hover:text-white transition-colors">Projets</a>
+        <a href="#contact" data-tab="contact"
+            class="nav-link bg-transparent text-white border border-white/20 px-4 py-1.5 rounded-full text-sm font-bold hover:bg-white hover:text-black transition-colors">Contact</a>
     </nav>
 
     <nav class="fixed top-6 z-50 bg-surface/90 backdrop-blur-md border border-border rounded-full px-4 py-2 hidden items-center gap-4 shadow-xl animate-fade-in"
@@ -142,7 +147,8 @@
     </nav>
 
     <!-- ================= ONGLET ACCUEIL ================= -->
-    <main id="section-accueil" class="tab-section w-full max-w-6xl mt-24 md:mt-32 space-y-24 z-10 transition-all duration-500">
+    <main id="section-accueil"
+        class="tab-section w-full max-w-6xl mt-24 md:mt-32 space-y-24 z-10 transition-all duration-500">
 
         <section class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center animate-slide-up">
             <div class="lg:col-span-8 space-y-8">
@@ -151,16 +157,20 @@
                     Ingénierie & <span
                         class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">Innovation.</span>
                 </h1>
-                
+
                 <div class="relative pl-6 border-l-2 border-blue-500/30">
                     <p class="text-xl md:text-2xl font-light leading-relaxed text-white italic">
-                        " Passionné par la création technique, j'ai commencé par explorer <span class="text-blue-400">l'électricité et la domotique</span>. 
-                        Ce qui me passionne aujourd'hui, c'est de <span class="text-purple-400">donner vie à des systèmes</span> : faire le pont entre la précision du code et la réalité physique. "
+                        " Passionné par la création technique, j'ai commencé par explorer <span
+                            class="text-blue-400">l'électricité et la domotique</span>.
+                        Ce qui me passionne aujourd'hui, c'est de <span class="text-purple-400">donner vie à des
+                            systèmes</span> : faire le pont entre la précision du code et la réalité physique. "
                     </p>
                 </div>
 
                 <div class="pt-4 flex items-center">
-                    <a href="./data/CV (1).pdf" target="_blank" onclick="setTimeout(() => { const a = document.createElement('a'); a.href='./data/CV (1).pdf'; a.download='CV_Marius_Coudurier.pdf'; a.click(); }, 500);" class="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 text-white font-bold rounded-full transition-all duration-300 shadow-[0_0_20px_rgba(59,130,246,0.3)] hover:shadow-[0_0_30px_rgba(168,85,247,0.5)] transform hover:-translate-y-1">
+                    <a href="./data/CV (1).pdf" target="_blank"
+                        onclick="setTimeout(() => { const a = document.createElement('a'); a.href='./data/CV (1).pdf'; a.download='CV_Marius_Coudurier.pdf'; a.click(); }, 500);"
+                        class="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 text-white font-bold rounded-full transition-all duration-300 shadow-[0_0_20px_rgba(59,130,246,0.3)] hover:shadow-[0_0_30px_rgba(168,85,247,0.5)] transform hover:-translate-y-1">
                         <i data-lucide="file-text" class="w-6 h-6"></i>
                         <span>Voir & Télécharger mon CV</span>
                     </a>
@@ -171,9 +181,13 @@
             <!-- Photo de Profil Premium -->
             <div class="lg:col-span-4 flex justify-center lg:justify-end">
                 <div class="relative group">
-                    <div class="absolute -inset-1 bg-gradient-to-r from-blue-500 to-purple-600 rounded-3xl blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
-                    <div class="relative w-64 md:w-80 aspect-[4/5] rounded-3xl overflow-hidden border border-white/10 shadow-2xl bg-black/40">
-                        <img src="./data/photo.jpg" alt="Marius Coudurier" class="w-full h-full object-cover object-center grayscale hover:grayscale-0 transition-all duration-700">
+                    <div
+                        class="absolute -inset-1 bg-gradient-to-r from-blue-500 to-purple-600 rounded-3xl blur opacity-25 group-hover:opacity-50 transition duration-1000">
+                    </div>
+                    <div
+                        class="relative w-64 md:w-80 aspect-[4/5] rounded-3xl overflow-hidden border border-white/10 shadow-2xl bg-black/40">
+                        <img src="./data/photo.jpg" alt="Marius Coudurier"
+                            class="w-full h-full object-cover object-center grayscale hover:grayscale-0 transition-all duration-700">
                     </div>
                 </div>
             </div>
@@ -209,7 +223,8 @@
                     </ul>
                 </div>
                 <!-- Bénévolat FCPE (Réinséré) -->
-                <div class="bg-surface border border-border p-6 rounded-2xl hover:border-white/20 transition-all md:col-span-2">
+                <div
+                    class="bg-surface border border-border p-6 rounded-2xl hover:border-white/20 transition-all md:col-span-2">
                     <div class="flex justify-between items-start mb-4">
                         <div>
                             <h3 class="text-xl font-bold text-white">Bénévolat FCPE</h3>
@@ -256,64 +271,89 @@
     </main>
 
     <!-- ================= ONGLET COMPÉTENCES ================= -->
-    <main id="section-competences" class="tab-section hidden-page w-full max-w-6xl mt-24 md:mt-32 space-y-24 z-10 transition-all duration-500">
+    <main id="section-competences"
+        class="tab-section hidden-page w-full max-w-6xl mt-24 md:mt-32 space-y-24 z-10 transition-all duration-500">
 
         <!-- COMPÉTENCES -->
         <section class="space-y-12 animate-slide-up">
             <h2 class="text-3xl font-semibold text-white">Compétences</h2>
-            
+
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Théorique & Méthode -->
-                <div class="bg-surface border border-border p-8 rounded-3xl hover:border-blue-500/30 transition-all group">
-                    <div class="w-12 h-12 bg-blue-500/10 rounded-2xl flex items-center justify-center mb-6 text-blue-400 group-hover:scale-110 transition-transform">
+                <div
+                    class="bg-surface border border-border p-8 rounded-3xl hover:border-blue-500/30 transition-all group">
+                    <div
+                        class="w-12 h-12 bg-blue-500/10 rounded-2xl flex items-center justify-center mb-6 text-blue-400 group-hover:scale-110 transition-transform">
                         <i data-lucide="brain" class="w-6 h-6"></i>
                     </div>
                     <h3 class="text-xl font-bold text-white mb-6">Savoirs Théoriques</h3>
                     <ul class="space-y-3 text-textMuted text-sm italic">
-                        <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-blue-500"></div> Logique séquentielle (Grafcet)</li>
-                        <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-blue-500"></div> Lecture & Analyse de schémas</li>
-                        <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-blue-500"></div> Lois fondamentales de l'électricité</li>
-                        <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-blue-500"></div> Gestion de projet & Travail en équipe</li>
-                        <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-blue-500"></div> Rédaction de documentation technique</li>
+                        <li class="flex items-center gap-2">
+                            <div class="w-1.5 h-1.5 rounded-full bg-blue-500"></div> Logique séquentielle (Grafcet)
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <div class="w-1.5 h-1.5 rounded-full bg-blue-500"></div> Lecture & Analyse de schémas
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <div class="w-1.5 h-1.5 rounded-full bg-blue-500"></div> Lois fondamentales de l'électricité
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <div class="w-1.5 h-1.5 rounded-full bg-blue-500"></div> Gestion de projet & Travail en
+                            équipe
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <div class="w-1.5 h-1.5 rounded-full bg-blue-500"></div> Rédaction de documentation
+                            technique
+                        </li>
                     </ul>
                 </div>
 
                 <!-- Logiciels -->
-                <div class="bg-surface border border-border p-8 rounded-3xl hover:border-purple-500/30 transition-all group">
-                    <div class="w-12 h-12 bg-purple-500/10 rounded-2xl flex items-center justify-center mb-6 text-purple-400 group-hover:scale-110 transition-transform">
+                <div
+                    class="bg-surface border border-border p-8 rounded-3xl hover:border-purple-500/30 transition-all group">
+                    <div
+                        class="w-12 h-12 bg-purple-500/10 rounded-2xl flex items-center justify-center mb-6 text-purple-400 group-hover:scale-110 transition-transform">
                         <i data-lucide="monitor" class="w-6 h-6"></i>
                     </div>
                     <h3 class="text-xl font-bold text-white mb-6">Outils Logiciels</h3>
                     <div class="grid grid-cols-2 gap-3">
-                        <div class="flex items-center gap-2 p-2 bg-white/5 rounded-xl border border-white/5 hover:border-purple-500/20 transition-colors">
+                        <div
+                            class="flex items-center gap-2 p-2 bg-white/5 rounded-xl border border-white/5 hover:border-purple-500/20 transition-colors">
                             <i data-lucide="cpu" class="w-4 h-4 text-purple-400/50"></i>
                             <span class="text-[11px] text-textMuted font-medium">TIA Portal V18</span>
                         </div>
-                        <div class="flex items-center gap-2 p-2 bg-white/5 rounded-xl border border-white/5 hover:border-purple-500/20 transition-colors">
+                        <div
+                            class="flex items-center gap-2 p-2 bg-white/5 rounded-xl border border-white/5 hover:border-purple-500/20 transition-colors">
                             <i data-lucide="activity" class="w-4 h-4 text-purple-400/50"></i>
                             <span class="text-[11px] text-textMuted font-medium">Proteus</span>
                         </div>
-                        <div class="flex items-center gap-2 p-2 bg-white/5 rounded-xl border border-white/5 hover:border-purple-500/20 transition-colors">
+                        <div
+                            class="flex items-center gap-2 p-2 bg-white/5 rounded-xl border border-white/5 hover:border-purple-500/20 transition-colors">
                             <i data-lucide="box" class="w-4 h-4 text-purple-400/50"></i>
                             <span class="text-[11px] text-textMuted font-medium">SolidWorks</span>
                         </div>
-                        <div class="flex items-center gap-2 p-2 bg-white/5 rounded-xl border border-white/5 hover:border-purple-500/20 transition-colors">
+                        <div
+                            class="flex items-center gap-2 p-2 bg-white/5 rounded-xl border border-white/5 hover:border-purple-500/20 transition-colors">
                             <i data-lucide="code-2" class="w-4 h-4 text-purple-400/50"></i>
                             <span class="text-[11px] text-textMuted font-medium">C++ (Arduino)</span>
                         </div>
-                        <div class="flex items-center gap-2 p-2 bg-white/5 rounded-xl border border-white/5 hover:border-purple-500/20 transition-colors">
+                        <div
+                            class="flex items-center gap-2 p-2 bg-white/5 rounded-xl border border-white/5 hover:border-purple-500/20 transition-colors">
                             <i data-lucide="zap" class="w-4 h-4 text-purple-400/50"></i>
                             <span class="text-[11px] text-textMuted font-medium">LT Spice</span>
                         </div>
-                        <div class="flex items-center gap-2 p-2 bg-white/5 rounded-xl border border-white/5 hover:border-purple-500/20 transition-colors">
+                        <div
+                            class="flex items-center gap-2 p-2 bg-white/5 rounded-xl border border-white/5 hover:border-purple-500/20 transition-colors">
                             <i data-lucide="circuit-board" class="w-4 h-4 text-purple-400/50"></i>
                             <span class="text-[11px] text-textMuted font-medium">KiCad</span>
                         </div>
-                        <div class="flex items-center gap-2 p-2 bg-white/5 rounded-xl border border-white/5 hover:border-purple-500/20 transition-colors">
+                        <div
+                            class="flex items-center gap-2 p-2 bg-white/5 rounded-xl border border-white/5 hover:border-purple-500/20 transition-colors">
                             <i data-lucide="layout" class="w-4 h-4 text-purple-400/50"></i>
                             <span class="text-[11px] text-textMuted font-medium">HTML / CSS</span>
                         </div>
-                        <div class="flex items-center gap-2 p-2 bg-white/5 rounded-xl border border-white/5 hover:border-purple-500/20 transition-colors">
+                        <div
+                            class="flex items-center gap-2 p-2 bg-white/5 rounded-xl border border-white/5 hover:border-purple-500/20 transition-colors">
                             <i data-lucide="file-text" class="w-4 h-4 text-purple-400/50"></i>
                             <span class="text-[11px] text-textMuted font-medium">Pack Office</span>
                         </div>
@@ -321,96 +361,136 @@
                 </div>
 
                 <!-- Compétences Manuelles -->
-                <div class="bg-surface border border-border p-8 rounded-3xl hover:border-orange-500/30 transition-all group">
-                    <div class="w-12 h-12 bg-orange-500/10 rounded-2xl flex items-center justify-center mb-6 text-orange-400 group-hover:scale-110 transition-transform">
+                <div
+                    class="bg-surface border border-border p-8 rounded-3xl hover:border-orange-500/30 transition-all group">
+                    <div
+                        class="w-12 h-12 bg-orange-500/10 rounded-2xl flex items-center justify-center mb-6 text-orange-400 group-hover:scale-110 transition-transform">
                         <i data-lucide="wrench" class="w-6 h-6"></i>
                     </div>
                     <h3 class="text-xl font-bold text-white mb-6">Savoir-Faire Manuel</h3>
                     <ul class="space-y-3 text-textMuted text-sm italic">
-                        <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-orange-500"></div> Appareils de mesure (Multimètre & Oscillo)</li>
-                        <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-orange-500"></div> Habilitation Électrique B1V</li>
-                        <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-orange-500"></div> Câblage d'armoires électriques</li>
-                        <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-orange-500"></div> Fabrication de cartes</li>
+                        <li class="flex items-center gap-2">
+                            <div class="w-1.5 h-1.5 rounded-full bg-orange-500"></div> Appareils de mesure (Multimètre &
+                            Oscillo)
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <div class="w-1.5 h-1.5 rounded-full bg-orange-500"></div> Habilitation Électrique B1V
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <div class="w-1.5 h-1.5 rounded-full bg-orange-500"></div> Câblage d'armoires électriques
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <div class="w-1.5 h-1.5 rounded-full bg-orange-500"></div> Fabrication de cartes
+                        </li>
                     </ul>
                 </div>
             </div>
 
             <!-- Acquis GEII (Savoir-faire & Savoir-être) -->
-            <h3 class="text-3xl font-semibold text-white mt-12 mb-6">Acquis & Référentiel BUT GEII</h3>
+            <h3 class="text-3xl font-semibold text-white mt-12 mb-6">Compétences BUT GEII</h3>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <!-- CONCEVOIR -->
-                <div class="bg-surface border border-border p-8 rounded-3xl hover:border-red-500/30 transition-all group">
-                    <div class="w-12 h-12 bg-red-500/10 rounded-2xl flex items-center justify-center mb-6 text-red-400 group-hover:scale-110 transition-transform">
+                <div
+                    class="bg-surface border border-border p-8 rounded-3xl hover:border-red-500/30 transition-all group">
+                    <div
+                        class="w-12 h-12 bg-red-500/10 rounded-2xl flex items-center justify-center mb-6 text-red-400 group-hover:scale-110 transition-transform">
                         <i data-lucide="lightbulb" class="w-6 h-6"></i>
                     </div>
                     <h3 class="text-xl font-bold text-white mb-2">CONCEVOIR</h3>
-                    <p class="text-sm text-textMuted mb-6 italic">Définir et concevoir une solution matérielle/logicielle répondant à un besoin.</p>
-                    
+                    <p class="text-sm text-textMuted mb-6 italic">Définir et concevoir une solution
+                        matérielle/logicielle répondant à un besoin.</p>
+
                     <div class="space-y-6">
                         <div>
-                            <h4 class="text-sm font-bold text-red-400 mb-3 uppercase tracking-wider">Savoir-Faire (Technique)</h4>
+                            <h4 class="text-sm font-bold text-red-400 mb-3 uppercase tracking-wider">Savoir-Faire
+                                (Technique)</h4>
                             <ul class="space-y-3 text-textMuted text-sm">
                                 <li class="flex items-start gap-2">
-                                    <div class="w-1.5 h-1.5 rounded-full bg-red-500 mt-1.5 flex-shrink-0"></div> 
-                                    <span><strong>C.1 :</strong> J'identifie les fonctions demandées à la lecture du cahier des charges (architecture fonctionnelle - sans solution technique).</span>
+                                    <div class="w-1.5 h-1.5 rounded-full bg-red-500 mt-1.5 flex-shrink-0"></div>
+                                    <span><strong>C.1 :</strong> J'identifie les fonctions demandées à la lecture du
+                                        cahier des charges (architecture fonctionnelle - sans solution
+                                        technique).</span>
                                 </li>
                                 <li class="flex items-start gap-2">
-                                    <div class="w-1.5 h-1.5 rounded-full bg-red-500 mt-1.5 flex-shrink-0"></div> 
-                                    <span><strong>C.2 :</strong> Je propose une solution technique pour répondre à une fonction.</span>
+                                    <div class="w-1.5 h-1.5 rounded-full bg-red-500 mt-1.5 flex-shrink-0"></div>
+                                    <span><strong>C.2 :</strong> Je propose une solution technique pour répondre à une
+                                        fonction.</span>
                                 </li>
                                 <li class="flex items-start gap-2">
-                                    <div class="w-1.5 h-1.5 rounded-full bg-red-500 mt-1.5 flex-shrink-0"></div> 
-                                    <span><strong>C.3 :</strong> J'affine une solution technique en m'appuyant sur un maquettage numérique et/ou matériel.</span>
+                                    <div class="w-1.5 h-1.5 rounded-full bg-red-500 mt-1.5 flex-shrink-0"></div>
+                                    <span><strong>C.3 :</strong> J'affine une solution technique en m'appuyant sur un
+                                        maquettage numérique et/ou matériel.</span>
                                 </li>
                                 <li class="flex items-start gap-2">
-                                    <div class="w-1.5 h-1.5 rounded-full bg-red-500 mt-1.5 flex-shrink-0"></div> 
-                                    <span><strong>C.4 :</strong> Je rédige un dossier de conception et de fabrication.</span>
+                                    <div class="w-1.5 h-1.5 rounded-full bg-red-500 mt-1.5 flex-shrink-0"></div>
+                                    <span><strong>C.4 :</strong> Je rédige un dossier de conception et de
+                                        fabrication.</span>
                                 </li>
                             </ul>
                         </div>
-                        
+
                         <div>
-                            <h4 class="text-sm font-bold text-red-400 mb-3 uppercase tracking-wider">Savoir-Être (Soft Skills)</h4>
+                            <h4 class="text-sm font-bold text-red-400 mb-3 uppercase tracking-wider">Savoir-Être (Soft
+                                Skills)</h4>
                             <div class="flex flex-wrap gap-2">
-                                <span class="px-3 py-1 bg-white/5 border border-white/10 rounded-full text-xs font-medium text-textMuted">Créativité</span>
-                                <span class="px-3 py-1 bg-white/5 border border-white/10 rounded-full text-xs font-medium text-textMuted">Esprit d'analyse</span>
-                                <span class="px-3 py-1 bg-white/5 border border-white/10 rounded-full text-xs font-medium text-textMuted">Anticipation</span>
-                                <span class="px-3 py-1 bg-white/5 border border-white/10 rounded-full text-xs font-medium text-textMuted">Rigueur de documentation</span>
+                                <span
+                                    class="px-3 py-1 bg-white/5 border border-white/10 rounded-full text-xs font-medium text-textMuted">Créativité</span>
+                                <span
+                                    class="px-3 py-1 bg-white/5 border border-white/10 rounded-full text-xs font-medium text-textMuted">Esprit
+                                    d'analyse</span>
+                                <span
+                                    class="px-3 py-1 bg-white/5 border border-white/10 rounded-full text-xs font-medium text-textMuted">Anticipation</span>
+                                <span
+                                    class="px-3 py-1 bg-white/5 border border-white/10 rounded-full text-xs font-medium text-textMuted">Rigueur
+                                    de documentation</span>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- VERIFIER -->
-                <div class="bg-surface border border-border p-8 rounded-3xl hover:border-orange-400/30 transition-all group">
-                    <div class="w-12 h-12 bg-orange-400/10 rounded-2xl flex items-center justify-center mb-6 text-orange-400 group-hover:scale-110 transition-transform">
+                <div
+                    class="bg-surface border border-border p-8 rounded-3xl hover:border-orange-400/30 transition-all group">
+                    <div
+                        class="w-12 h-12 bg-orange-400/10 rounded-2xl flex items-center justify-center mb-6 text-orange-400 group-hover:scale-110 transition-transform">
                         <i data-lucide="check-circle" class="w-6 h-6"></i>
                     </div>
                     <h3 class="text-xl font-bold text-white mb-2">VÉRIFIER</h3>
-                    <p class="text-sm text-textMuted mb-6 italic">Contrôler la conformité et le bon fonctionnement d'un système.</p>
-                    
+                    <p class="text-sm text-textMuted mb-6 italic">Contrôler la conformité et le bon fonctionnement d'un
+                        système.</p>
+
                     <div class="space-y-6">
                         <div>
-                            <h4 class="text-sm font-bold text-orange-400 mb-3 uppercase tracking-wider">Savoir-Faire (Technique)</h4>
+                            <h4 class="text-sm font-bold text-orange-400 mb-3 uppercase tracking-wider">Savoir-Faire
+                                (Technique)</h4>
                             <ul class="space-y-3 text-textMuted text-sm">
                                 <li class="flex items-start gap-2">
-                                    <div class="w-1.5 h-1.5 rounded-full bg-orange-400 mt-1.5 flex-shrink-0"></div> 
-                                    <span><strong>V.1 :</strong> J'applique, j'élabore, je rédige une procédure d'essais.</span>
+                                    <div class="w-1.5 h-1.5 rounded-full bg-orange-400 mt-1.5 flex-shrink-0"></div>
+                                    <span><strong>V.1 :</strong> J'applique, j'élabore, je rédige une procédure
+                                        d'essais.</span>
                                 </li>
                                 <li class="flex items-start gap-2">
-                                    <div class="w-1.5 h-1.5 rounded-full bg-orange-400 mt-1.5 flex-shrink-0"></div> 
-                                    <span><strong>V.2 :</strong> J'identifie, je corrige les non-conformités d'un prototype.</span>
+                                    <div class="w-1.5 h-1.5 rounded-full bg-orange-400 mt-1.5 flex-shrink-0"></div>
+                                    <span><strong>V.2 :</strong> J'identifie, je corrige les non-conformités d'un
+                                        prototype.</span>
                                 </li>
                             </ul>
                         </div>
-                        
+
                         <div>
-                            <h4 class="text-sm font-bold text-orange-400 mb-3 uppercase tracking-wider">Savoir-Être (Soft Skills)</h4>
+                            <h4 class="text-sm font-bold text-orange-400 mb-3 uppercase tracking-wider">Savoir-Être
+                                (Soft Skills)</h4>
                             <div class="flex flex-wrap gap-2">
-                                <span class="px-3 py-1 bg-white/5 border border-white/10 rounded-full text-xs font-medium text-textMuted">Méthodologie</span>
-                                <span class="px-3 py-1 bg-white/5 border border-white/10 rounded-full text-xs font-medium text-textMuted">Résolution de problèmes</span>
-                                <span class="px-3 py-1 bg-white/5 border border-white/10 rounded-full text-xs font-medium text-textMuted">Esprit critique</span>
-                                <span class="px-3 py-1 bg-white/5 border border-white/10 rounded-full text-xs font-medium text-textMuted">Persévérance</span>
+                                <span
+                                    class="px-3 py-1 bg-white/5 border border-white/10 rounded-full text-xs font-medium text-textMuted">Méthodologie</span>
+                                <span
+                                    class="px-3 py-1 bg-white/5 border border-white/10 rounded-full text-xs font-medium text-textMuted">Résolution
+                                    de problèmes</span>
+                                <span
+                                    class="px-3 py-1 bg-white/5 border border-white/10 rounded-full text-xs font-medium text-textMuted">Esprit
+                                    critique</span>
+                                <span
+                                    class="px-3 py-1 bg-white/5 border border-white/10 rounded-full text-xs font-medium text-textMuted">Persévérance</span>
                             </div>
                         </div>
                     </div>
@@ -419,10 +499,12 @@
 
             <!-- Lien vers le projet SAE -->
             <div class="pt-6 flex justify-center md:justify-start">
-                <button onclick="openPage('saePage', 'Système Embarqué')" class="flex items-center gap-3 px-6 py-3 bg-blue-500/10 border border-blue-500/20 hover:border-blue-500/50 hover:bg-blue-500/20 rounded-full text-white font-medium transition-all group">
+                <button onclick="openPage('saePage', 'Système Embarqué')"
+                    class="flex items-center gap-3 px-6 py-3 bg-blue-500/10 border border-blue-500/20 hover:border-blue-500/50 hover:bg-blue-500/20 rounded-full text-white font-medium transition-all group">
                     <i data-lucide="cpu" class="w-5 h-5 text-blue-400 group-hover:scale-110 transition-transform"></i>
                     <span>Voir l'application en projet : <strong>Thermomètre de Bain</strong></span>
-                    <i data-lucide="arrow-right" class="w-4 h-4 text-blue-400 group-hover:translate-x-1 transition-transform"></i>
+                    <i data-lucide="arrow-right"
+                        class="w-4 h-4 text-blue-400 group-hover:translate-x-1 transition-transform"></i>
                 </button>
             </div>
         </section>
@@ -431,33 +513,51 @@
 
 
     <!-- ================= ONGLET PROJETS ================= -->
-    <main id="section-projets" class="tab-section hidden-page w-full max-w-6xl mt-24 md:mt-32 space-y-24 z-10 transition-all duration-500">
+    <main id="section-projets"
+        class="tab-section hidden-page w-full max-w-6xl mt-24 md:mt-32 space-y-24 z-10 transition-all duration-500">
 
         <section id="work" class="space-y-8 animate-slide-up" style="animation-delay: 0.1s;">
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[400px]">
+            <!-- Filtres de projets -->
+            <div class="flex flex-wrap items-center justify-center gap-4 mb-8">
+                <button onclick="filterProjects('school', this)" class="project-filter-btn px-6 py-2 rounded-full border border-white/10 bg-transparent text-textMuted font-medium hover:text-white hover:border-white/20 transition-all text-sm">École</button>
+                <button onclick="filterProjects('all', this)" class="project-filter-btn active px-6 py-2 rounded-full border border-white/20 bg-white/10 text-white font-medium hover:bg-white/20 transition-all text-sm">Tous</button>
+                <button onclick="filterProjects('perso', this)" class="project-filter-btn px-6 py-2 rounded-full border border-white/10 bg-transparent text-textMuted font-medium hover:text-white hover:border-white/20 transition-all text-sm">Perso</button>
+            </div>
+
+            <div id="projects-grid" class="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[400px]">
 
                 <!-- MISSION: SOPHIE -->
                 <div onclick="openPage('missionSophiePage', 'Espace &amp; Communication')"
-                    class="project-card-magic cursor-pointer group relative md:col-span-3 bg-surface rounded-3xl overflow-hidden border border-border hover:border-purple-500/50 transition-all duration-500 hover:shadow-[0_0_30px_rgba(168,85,247,0.15)]"
+                    class="project-card-magic project-item cursor-pointer group relative md:col-span-3 bg-surface rounded-3xl overflow-hidden border border-border hover:border-purple-500/50 transition-all duration-500 hover:shadow-[0_0_30px_rgba(168,85,247,0.15)]"
+                    data-category="school"
                     data-glow-color="168, 85, 247">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent z-10 pointer-events-none"></div>
-                    <div class="absolute top-4 left-4 md:top-6 md:left-6 z-20 bg-black/40 backdrop-blur-md border border-white/10 px-3 py-1 rounded-full flex items-center gap-2">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent z-10 pointer-events-none">
+                    </div>
+                    <div
+                        class="absolute top-4 left-4 md:top-6 md:left-6 z-20 bg-black/40 backdrop-blur-md border border-white/10 px-3 py-1 rounded-full flex items-center gap-2">
                         <i data-lucide="graduation-cap" class="w-4 h-4 text-purple-400"></i>
-                        <span class="text-[10px] font-bold text-white uppercase tracking-widest">SCHOOL</span>
+                        <span class="text-[10px] font-bold text-white uppercase tracking-widest">ÉCOLE</span>
                     </div>
                     <img src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?q=80&w=2000&auto=format&fit=crop"
                         alt="Espace et ISS"
                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
-                    <div class="absolute top-8 right-8 z-20 bg-black/50 backdrop-blur-md border border-white/10 px-4 py-2 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-500 translate-y-[-10px] group-hover:translate-y-0">
-                        <span class="text-xs font-bold text-purple-400 uppercase tracking-wider">Explorer la mission</span>
+                    <div
+                        class="absolute top-8 right-8 z-20 bg-black/50 backdrop-blur-md border border-white/10 px-4 py-2 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-500 translate-y-[-10px] group-hover:translate-y-0">
+                        <span class="text-xs font-bold text-purple-400 uppercase tracking-wider">Explorer la
+                            mission</span>
                     </div>
                     <div class="absolute bottom-0 left-0 p-8 z-20 w-full flex justify-between items-end">
                         <div class="max-w-xl">
-                            <h3 class="text-3xl font-bold mb-2 text-white group-hover:text-purple-400 transition-colors">MISSION: SOPHIE (ARISS)</h3>
-                            <p class="text-gray-100 font-medium drop-shadow-sm">2026 • Communication HF • ISS • Médiation Scientifique</p>
+                            <h3
+                                class="text-3xl font-bold mb-2 text-white group-hover:text-purple-400 transition-colors">
+                                MISSION: SOPHIE (ARISS)</h3>
+                            <p class="text-gray-100 font-medium drop-shadow-sm">2026 • Communication HF • ISS •
+                                Médiation Scientifique</p>
                         </div>
-                        <div class="bg-purple-600 p-3 rounded-full opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300 shadow-lg shadow-purple-900/50">
+                        <div
+                            class="bg-purple-600 p-3 rounded-full opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300 shadow-lg shadow-purple-900/50">
                             <i data-lucide="arrow-right" class="w-6 h-6 text-white"></i>
                         </div>
                     </div>
@@ -465,12 +565,14 @@
 
                 <!-- CALTRACKER -->
                 <div onclick="openPage('caltrackerPage', 'SaaS Nutrition & IA')"
-                    class="project-card-magic cursor-pointer group relative md:col-span-2 bg-surface rounded-3xl overflow-hidden border border-border hover:border-green-500/50 transition-all duration-500 hover:shadow-[0_0_30px_rgba(39,201,63,0.15)]"
+                    class="project-card-magic project-item cursor-pointer group relative md:col-span-2 bg-surface rounded-3xl overflow-hidden border border-border hover:border-green-500/50 transition-all duration-500 hover:shadow-[0_0_30px_rgba(39,201,63,0.15)]"
+                    data-category="perso"
                     data-glow-color="39, 201, 63">
                     <div
                         class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent z-10 pointer-events-none">
                     </div>
-                    <div class="absolute top-4 left-4 md:top-6 md:left-6 z-20 bg-black/40 backdrop-blur-md border border-white/10 px-3 py-1 rounded-full flex items-center gap-2">
+                    <div
+                        class="absolute top-4 left-4 md:top-6 md:left-6 z-20 bg-black/40 backdrop-blur-md border border-white/10 px-3 py-1 rounded-full flex items-center gap-2">
                         <i data-lucide="user" class="w-4 h-4 text-green-400"></i>
                         <span class="text-[10px] font-bold text-white uppercase tracking-widest">Perso</span>
                     </div>
@@ -499,14 +601,16 @@
 
                 <!-- PROJET SAE -->
                 <div onclick="openPage('saePage', 'Système Embarqué')"
-                    class="project-card-magic cursor-pointer group relative md:col-span-1 bg-surface rounded-3xl overflow-hidden border border-border hover:border-blue-500/50 transition-all duration-500 hover:shadow-[0_0_30px_rgba(59,130,246,0.15)]"
+                    class="project-card-magic project-item cursor-pointer group relative md:col-span-1 bg-surface rounded-3xl overflow-hidden border border-border hover:border-blue-500/50 transition-all duration-500 hover:shadow-[0_0_30px_rgba(59,130,246,0.15)]"
+                    data-category="school"
                     data-glow-color="59, 130, 246">
                     <div
                         class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent z-10 pointer-events-none">
                     </div>
-                    <div class="absolute top-4 left-4 md:top-6 md:left-6 z-20 bg-black/40 backdrop-blur-md border border-white/10 px-3 py-1 rounded-full flex items-center gap-2">
+                    <div
+                        class="absolute top-4 left-4 md:top-6 md:left-6 z-20 bg-black/40 backdrop-blur-md border border-white/10 px-3 py-1 rounded-full flex items-center gap-2">
                         <i data-lucide="graduation-cap" class="w-4 h-4 text-blue-400"></i>
-                        <span class="text-[10px] font-bold text-white uppercase tracking-widest">SCHOOL</span>
+                        <span class="text-[10px] font-bold text-white uppercase tracking-widest">ÉCOLE</span>
                     </div>
                     <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=2000&auto=format&fit=crop"
                         alt="Carte Électronique"
@@ -532,11 +636,13 @@
 
                 <!-- DOSSIER LYCÉE -->
                 <div onclick="openPage('lyceeProjectsPage', 'Réalisations Lycée')"
-                    class="project-card-magic cursor-pointer group relative md:col-span-1 bg-surface rounded-3xl overflow-hidden border border-border hover:border-blue-500/50 transition-all duration-500 hover:shadow-[0_0_30px_rgba(59,130,246,0.15)]"
+                    class="project-card-magic project-item cursor-pointer group relative md:col-span-1 bg-surface rounded-3xl overflow-hidden border border-border hover:border-blue-500/50 transition-all duration-500 hover:shadow-[0_0_30px_rgba(59,130,246,0.15)]"
+                    data-category="school"
                     data-glow-color="59, 130, 246">
-                    <div class="absolute top-4 left-4 md:top-6 md:left-6 z-20 bg-black/40 backdrop-blur-md border border-white/10 px-3 py-1 rounded-full flex items-center gap-2">
+                    <div
+                        class="absolute top-4 left-4 md:top-6 md:left-6 z-20 bg-black/40 backdrop-blur-md border border-white/10 px-3 py-1 rounded-full flex items-center gap-2">
                         <i data-lucide="graduation-cap" class="w-4 h-4 text-blue-400"></i>
-                        <span class="text-[10px] font-bold text-white uppercase tracking-widest">SCHOOL</span>
+                        <span class="text-[10px] font-bold text-white uppercase tracking-widest">ÉCOLE</span>
                     </div>
                     <img src="https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?q=80&w=2000&auto=format&fit=crop"
                         alt="Dossier Projets Lycée"
@@ -562,9 +668,11 @@
 
                 <!-- AMBILIGHT MAISON -->
                 <div onclick="openPage('ambilightPage', 'Système Lumineux IoT')"
-                    class="project-card-magic cursor-pointer group relative md:col-span-1 bg-surface rounded-3xl overflow-hidden border border-border hover:border-yellow-500/50 transition-all duration-500 hover:shadow-[0_0_30px_rgba(234,179,8,0.15)]"
+                    class="project-card-magic project-item cursor-pointer group relative md:col-span-1 bg-surface rounded-3xl overflow-hidden border border-border hover:border-yellow-500/50 transition-all duration-500 hover:shadow-[0_0_30px_rgba(234,179,8,0.15)]"
+                    data-category="perso"
                     data-glow-color="234, 179, 8">
-                    <div class="absolute top-4 left-4 md:top-6 md:left-6 z-20 bg-black/40 backdrop-blur-md border border-white/10 px-3 py-1 rounded-full flex items-center gap-2">
+                    <div
+                        class="absolute top-4 left-4 md:top-6 md:left-6 z-20 bg-black/40 backdrop-blur-md border border-white/10 px-3 py-1 rounded-full flex items-center gap-2">
                         <i data-lucide="user" class="w-4 h-4 text-yellow-400"></i>
                         <span class="text-[10px] font-bold text-white uppercase tracking-widest">Perso</span>
                     </div>
@@ -583,7 +691,8 @@
                             <h3 class="text-xl font-bold mb-1">Ambilight Maison</h3>
                             <p class="text-textMuted text-sm">2025 • IoT • ESP8266</p>
                         </div>
-                        <div class="bg-yellow-600 p-3 rounded-full opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300 shadow-lg shadow-yellow-900/50">
+                        <div
+                            class="bg-yellow-600 p-3 rounded-full opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300 shadow-lg shadow-yellow-900/50">
                             <i data-lucide="arrow-right" class="w-6 h-6 text-white"></i>
                         </div>
                     </div>
@@ -591,10 +700,12 @@
 
                 <!-- MAKER -->
                 <div onclick="openPage('makerPage', 'Domotique')"
-                    class="project-card-magic cursor-pointer group relative md:col-span-1 bg-[#F5F5F7] rounded-3xl overflow-hidden border border-border hover:border-purple-500/50 transition-all duration-500"
+                    class="project-card-magic project-item cursor-pointer group relative md:col-span-1 bg-[#F5F5F7] rounded-3xl overflow-hidden border border-border hover:border-purple-500/50 transition-all duration-500"
+                    data-category="perso"
                     data-glow-color="168, 85, 247">
                     <div class="w-full h-full flex items-center justify-center relative overflow-hidden">
-                        <div class="absolute top-4 left-4 md:top-6 md:left-6 z-20 bg-black/40 backdrop-blur-md border border-white/10 px-3 py-1 rounded-full flex items-center gap-2">
+                        <div
+                            class="absolute top-4 left-4 md:top-6 md:left-6 z-20 bg-black/40 backdrop-blur-md border border-white/10 px-3 py-1 rounded-full flex items-center gap-2">
                             <i data-lucide="user" class="w-4 h-4 text-purple-400"></i>
                             <span class="text-[10px] font-bold text-white uppercase tracking-widest">Perso</span>
                         </div>
@@ -627,17 +738,52 @@
                     </div>
                 </div>
 
+                <!-- KART À HÉLICE -->
+                <div onclick="openPage('kartPage', 'Kart à hélice')"
+                    class="project-card-magic project-item cursor-pointer group relative md:col-span-1 bg-surface rounded-3xl overflow-hidden border border-border hover:border-red-500/50 transition-all duration-500 hover:shadow-[0_0_30px_rgba(239,68,68,0.15)]"
+                    data-category="school"
+                    data-glow-color="239, 68, 68">
+                    <div
+                        class="absolute top-4 left-4 md:top-6 md:left-6 z-20 bg-black/40 backdrop-blur-md border border-white/10 px-3 py-1 rounded-full flex items-center gap-2">
+                        <i data-lucide="graduation-cap" class="w-4 h-4 text-red-400"></i>
+                        <span class="text-[10px] font-bold text-white uppercase tracking-widest">ÉCOLE</span>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=2000&auto=format&fit=crop"
+                        alt="Kart à hélice"
+                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-80 group-hover:opacity-100">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent z-10"></div>
+
+                    <div
+                        class="absolute top-8 right-8 z-20 bg-black/50 backdrop-blur-md border border-white/10 px-4 py-2 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-500 translate-y-[-10px] group-hover:translate-y-0">
+                        <span class="text-xs font-bold text-white uppercase tracking-wider">Voir le projet</span>
+                    </div>
+
+                    <div class="absolute bottom-0 left-0 p-8 z-20 w-full flex justify-between items-end">
+                        <div>
+                            <h3 class="text-xl font-bold mb-1 group-hover:text-red-400 transition-colors">Kart à hélice</h3>
+                            <p class="text-textMuted text-sm">2024 • Mécanique • Prototypage</p>
+                        </div>
+                        <div
+                            class="bg-red-600 p-3 rounded-full opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300 shadow-lg shadow-red-900/50">
+                            <i data-lucide="arrow-right" class="w-6 h-6 text-white"></i>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- SMART SPEAKER -->
                 <div onclick="openPage('smartSpeakerPage', 'Audio & Menuiserie')"
-                    class="project-card-magic cursor-pointer group relative md:col-span-3 bg-surface rounded-3xl overflow-hidden border border-border hover:border-pink-500/50 transition-all duration-500 hover:shadow-[0_0_30px_rgba(236,72,153,0.15)]"
+                    class="project-card-magic project-item cursor-pointer group relative md:col-span-2 bg-surface rounded-3xl overflow-hidden border border-border hover:border-pink-500/50 transition-all duration-500 hover:shadow-[0_0_30px_rgba(236,72,153,0.15)]"
+                    data-category="perso"
                     data-glow-color="236, 72, 153">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent z-10 pointer-events-none"></div>
-                    <div class="absolute top-4 left-4 md:top-6 md:left-6 z-20 bg-black/40 backdrop-blur-md border border-white/10 px-3 py-1 rounded-full flex items-center gap-2">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent z-10 pointer-events-none">
+                    </div>
+                    <div
+                        class="absolute top-4 left-4 md:top-6 md:left-6 z-20 bg-black/40 backdrop-blur-md border border-white/10 px-3 py-1 rounded-full flex items-center gap-2">
                         <i data-lucide="user" class="w-4 h-4 text-pink-400"></i>
                         <span class="text-[10px] font-bold text-white uppercase tracking-widest">Perso</span>
                     </div>
-                    <img src="./data/présantaion .png"
-                        alt="Google Home Upgrade"
+                    <img src="./data/présantaion .png" alt="Google Home Upgrade"
                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-80 group-hover:opacity-100">
 
                     <div
@@ -647,10 +793,12 @@
 
                     <div class="absolute bottom-0 left-0 p-8 z-20 w-full flex justify-between items-end">
                         <div class="max-w-xl">
-                            <h3 class="text-3xl font-bold mb-2 text-white group-hover:text-pink-400 transition-colors">Google Home Upgrade</h3>
+                            <h3 class="text-3xl font-bold mb-2 text-white group-hover:text-pink-400 transition-colors">
+                                Google Home Upgrade</h3>
                             <p class="text-gray-100 font-medium drop-shadow-sm">2026 • Audio • Menuiserie</p>
                         </div>
-                        <div class="bg-pink-600 p-3 rounded-full opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300 shadow-lg shadow-pink-900/50">
+                        <div
+                            class="bg-pink-600 p-3 rounded-full opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300 shadow-lg shadow-pink-900/50">
                             <i data-lucide="arrow-right" class="w-6 h-6 text-white"></i>
                         </div>
                     </div>
@@ -679,7 +827,8 @@
                             MISSION: SOPHIE – Sensibilisation Spatiale et Communication Radio
                         </h1>
                         <p class="text-purple-500 font-medium flex items-center gap-2">
-                            <i data-lucide="satellite" class="w-5 h-5"></i> Projet ARISS en collaboration avec l'astronaute française Sophie Adenot.
+                            <i data-lucide="satellite" class="w-5 h-5"></i> Projet ARISS en collaboration avec
+                            l'astronaute française Sophie Adenot.
                         </p>
                     </div>
 
@@ -688,26 +837,47 @@
                             <i data-lucide="info" class="text-purple-400 w-6 h-6"></i> Résumé du Projet
                         </h2>
                         <p class="text-textMuted leading-relaxed mb-6">
-                            Le projet MISSION:SOPHIE (Station Orbitale pour la Promotion des communications Hyperfréquences, de l'Inclusivité et de l'Espace) est une initiative portée par le département GEII de l'IUT de Bordeaux. Sélectionné par le programme international ARISS, il vise à connecter 50 classes d'élèves de Nouvelle-Aquitaine avec l'ISS au printemps 2026.
-                            En tant qu'étudiant en 1ère année de BUT GEII, j'ai intégré cette Action d'Ouverture Personnelle (AOP) pour participer activement à l'infrastructure technique, à l'organisation événementielle et à la médiation scientifique.
+                            Le projet MISSION:SOPHIE (Station Orbitale pour la Promotion des communications
+                            Hyperfréquences, de l'Inclusivité et de l'Espace) est une initiative portée par le
+                            département GEII de l'IUT de Bordeaux. Sélectionné par le programme international ARISS, il
+                            vise à connecter 50 classes d'élèves de Nouvelle-Aquitaine avec l'ISS au printemps 2026.
+                            En tant qu'étudiant en 1ère année de BUT GEII, j'ai intégré cette Action d'Ouverture
+                            Personnelle (AOP) pour participer activement à l'infrastructure technique, à l'organisation
+                            événementielle et à la médiation scientifique.
                         </p>
 
                         <h2 class="text-xl font-bold text-white mb-4 mt-8 flex items-center gap-3">
                             <i data-lucide="star" class="text-purple-400 w-6 h-6"></i> Mes Contributions
                         </h2>
                         <ul class="text-textMuted leading-relaxed mb-6 list-disc list-inside space-y-2">
-                            <li><strong>Interventions en écoles :</strong> Animation d'ateliers scientifiques (ondes radio, antennes VHF/UHF) pour les élèves et les professeurs.</li>
-                            <li><strong>Création Audiovisuelle :</strong> Scénarisation, tournage et montage complet d'une vidéo éducative. Présentée par Valentin Moustey, elle explique concrètement aux professeurs et aux élèves comment utiliser un talkie-walkie pour écouter l'ISS depuis leur école.</li>
-                            <li><strong>Communication événementielle :</strong> Conception des affiches promotionnelles avec un QR code menant à un site interactif développé par mes soins (informations sur l'ISS, vue 3D).</li>
-                            <li><strong>Gestion d'événement :</strong> Accueil des journalistes, des élèves et des personnalités importantes. Coordination post-questions lors de l'échange radio en direct (QSO) avec l'ISS.</li>
+                            <li><strong>Interventions en écoles :</strong> Animation d'ateliers scientifiques (ondes
+                                radio, antennes VHF/UHF) pour les élèves et les professeurs.</li>
+                            <li><strong>Création Audiovisuelle :</strong> Scénarisation, tournage et montage complet
+                                d'une vidéo éducative. Présentée par Valentin Moustey, elle explique concrètement aux
+                                professeurs et aux élèves comment utiliser un talkie-walkie pour écouter l'ISS depuis
+                                leur école.</li>
+                            <li><strong>Communication événementielle :</strong> Conception des affiches promotionnelles
+                                avec un QR code menant à un site interactif développé par mes soins (informations sur
+                                l'ISS, vue 3D).</li>
+                            <li><strong>Gestion d'événement :</strong> Accueil des journalistes, des élèves et des
+                                personnalités importantes. Coordination post-questions lors de l'échange radio en direct
+                                (QSO) avec l'ISS.</li>
                         </ul>
 
-                        <div class="mt-6 mb-8 rounded-2xl overflow-hidden border border-white/10 shadow-[0_0_30px_rgba(168,85,247,0.15)] bg-surfaceHover p-2">
-                            <h3 class="text-white font-bold mb-3 ml-2 flex items-center gap-2"><i data-lucide="youtube" class="text-red-500 w-5 h-5"></i> Vidéo Pédagogique (Réalisation et Montage)</h3>
-                            <a href="https://youtu.be/PjcDAuDPP6Q?si=muUNXP_-CF1rzlhR" target="_blank" rel="noopener noreferrer" class="relative block w-full aspect-video rounded-xl overflow-hidden group cursor-pointer border border-white/5">
-                                <img src="https://img.youtube.com/vi/PjcDAuDPP6Q/maxresdefault.jpg" alt="Miniature vidéo" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
-                                <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors flex items-center justify-center">
-                                    <div class="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center shadow-[0_0_20px_rgba(220,38,38,0.5)] group-hover:scale-110 group-hover:bg-red-500 transition-all">
+                        <div
+                            class="mt-6 mb-8 rounded-2xl overflow-hidden border border-white/10 shadow-[0_0_30px_rgba(168,85,247,0.15)] bg-surfaceHover p-2">
+                            <h3 class="text-white font-bold mb-3 ml-2 flex items-center gap-2"><i data-lucide="youtube"
+                                    class="text-red-500 w-5 h-5"></i> Vidéo Pédagogique (Réalisation et Montage)</h3>
+                            <a href="https://youtu.be/PjcDAuDPP6Q?si=muUNXP_-CF1rzlhR" target="_blank"
+                                rel="noopener noreferrer"
+                                class="relative block w-full aspect-video rounded-xl overflow-hidden group cursor-pointer border border-white/5">
+                                <img src="https://img.youtube.com/vi/PjcDAuDPP6Q/maxresdefault.jpg"
+                                    alt="Miniature vidéo"
+                                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                                <div
+                                    class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors flex items-center justify-center">
+                                    <div
+                                        class="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center shadow-[0_0_20px_rgba(220,38,38,0.5)] group-hover:scale-110 group-hover:bg-red-500 transition-all">
                                         <i data-lucide="play" class="w-8 h-8 text-white fill-white ml-1"></i>
                                     </div>
                                 </div>
@@ -729,16 +899,19 @@
 
                 <!-- Colonne Image / Affiche -->
                 <div class="lg:col-span-4 flex flex-col items-center pt-8 gap-6">
-                    <div class="relative group/poster cursor-zoom-in" onclick="openPosterZoom('./data/affiche iss.png')">
-                        <img src="./data/affiche iss.png" alt="Affiche Mission Sophie" 
+                    <div class="relative group/poster cursor-zoom-in"
+                        onclick="openPosterZoom('./data/affiche iss.png')">
+                        <img src="./data/affiche iss.png" alt="Affiche Mission Sophie"
                             class="w-full max-w-sm rounded-2xl shadow-[0_0_30px_rgba(168,85,247,0.2)] border border-white/10 group-hover/poster:scale-105 transition-all duration-500">
-                        <div class="absolute inset-0 bg-purple-600/20 opacity-0 group-hover/poster:opacity-100 transition-opacity flex items-center justify-center rounded-2xl">
+                        <div
+                            class="absolute inset-0 bg-purple-600/20 opacity-0 group-hover/poster:opacity-100 transition-opacity flex items-center justify-center rounded-2xl">
                             <div class="bg-black/60 backdrop-blur-md p-3 rounded-full border border-white/20">
                                 <i data-lucide="zoom-in" class="text-white w-6 h-6"></i>
                             </div>
                         </div>
                     </div>
-                    <p class="text-xs text-textMuted font-medium uppercase tracking-widest italic">Cliquez pour agrandir l'affiche</p>
+                    <p class="text-xs text-textMuted font-medium uppercase tracking-widest italic">Cliquez pour agrandir
+                        l'affiche</p>
                 </div>
             </div>
         </header>
@@ -756,7 +929,8 @@
                     <div style="width: 12px; height: 12px; border-radius: 50%; background-color: #ffbd2e;"></div>
                     <div style="width: 12px; height: 12px; border-radius: 50%; background-color: #27c93f;"></div>
                     <span
-                        style="margin-left: 10px; font-family: sans-serif; font-size: 13px; color: #6b7280; font-weight: 500;">ISS 3D Experience (QR Code Project)</span>
+                        style="margin-left: 10px; font-family: sans-serif; font-size: 13px; color: #6b7280; font-weight: 500;">ISS
+                        3D Experience (QR Code Project)</span>
                 </div>
                 <iframe src="https://sophien.vercel.app/" allow="camera; microphone; fullscreen; display-capture"
                     style="width: 100%; height: calc(100% - 40px); border: none;"
@@ -778,15 +952,18 @@
     </main>
 
     <!-- ================= PAGE RÉALISATIONS LYCÉE (DOSSIER) ================= -->
-    <main id="lyceeProjectsPage" class="hidden-page w-full max-w-5xl mt-24 md:mt-32 space-y-16 animate-fade-in relative z-10 pb-24">
+    <main id="lyceeProjectsPage"
+        class="hidden-page w-full max-w-5xl mt-24 md:mt-32 space-y-16 animate-fade-in relative z-10 pb-24">
 
         <!-- En-tête de la page Lycée -->
         <header class="text-center space-y-6">
-            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-surface border border-border text-sm font-medium text-textMuted mb-4">
+            <div
+                class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-surface border border-border text-sm font-medium text-textMuted mb-4">
                 <i data-lucide="folder" class="w-4 h-4"></i> Dossier de Réalisations
             </div>
             <h1 class="text-4xl md:text-5xl font-bold mb-4 tracking-tight leading-tight">Réalisations Lycée</h1>
-            <p class="text-textMuted leading-relaxed max-w-2xl mx-auto text-lg">Retrouvez ici mes réalisations effectuées durant mes années de lycée.</p>
+            <p class="text-textMuted leading-relaxed max-w-2xl mx-auto text-lg">Retrouvez ici mes réalisations
+                effectuées durant mes années de lycée.</p>
         </header>
 
         <section class="space-y-8 animate-slide-up" style="animation-delay: 0.1s;">
@@ -796,7 +973,8 @@
                     class="project-card-magic cursor-pointer group relative md:col-span-1 bg-surface rounded-3xl overflow-hidden border border-border hover:border-orange-500/50 transition-all duration-500 hover:shadow-[0_0_30px_rgba(249,115,22,0.15)]"
                     data-glow-color="249, 115, 22">
                     <!-- IMAGE PLEIN CADRE ET CENTRÉE -->
-                    <div class="absolute top-4 left-4 md:top-6 md:left-6 z-20 bg-black/40 backdrop-blur-md border border-white/10 px-3 py-1 rounded-full flex items-center gap-2">
+                    <div
+                        class="absolute top-4 left-4 md:top-6 md:left-6 z-20 bg-black/40 backdrop-blur-md border border-white/10 px-3 py-1 rounded-full flex items-center gap-2">
                         <i data-lucide="graduation-cap" class="w-4 h-4 text-orange-400"></i>
                         <span class="text-[10px] font-bold text-white uppercase tracking-widest">SCHOOL</span>
                     </div>
@@ -817,7 +995,8 @@
                             <h3 class="text-xl font-bold mb-1">Robot Sumo</h3>
                             <p class="text-textMuted text-sm">2023 • C++ • Impression 3D</p>
                         </div>
-                        <div class="bg-orange-600 p-3 rounded-full opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300 shadow-lg shadow-orange-900/50">
+                        <div
+                            class="bg-orange-600 p-3 rounded-full opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300 shadow-lg shadow-orange-900/50">
                             <i data-lucide="arrow-right" class="w-6 h-6 text-white"></i>
                         </div>
                     </div>
@@ -827,7 +1006,8 @@
                 <div onclick="openPage('lockerPage', 'Système Embarqué')"
                     class="project-card-magic cursor-pointer group relative md:col-span-1 bg-surface rounded-3xl overflow-hidden border border-border hover:border-cyan-500/50 transition-all duration-500"
                     data-glow-color="6, 182, 212">
-                    <div class="absolute top-4 left-4 md:top-6 md:left-6 z-20 bg-black/40 backdrop-blur-md border border-white/10 px-3 py-1 rounded-full flex items-center gap-2">
+                    <div
+                        class="absolute top-4 left-4 md:top-6 md:left-6 z-20 bg-black/40 backdrop-blur-md border border-white/10 px-3 py-1 rounded-full flex items-center gap-2">
                         <i data-lucide="graduation-cap" class="w-4 h-4 text-cyan-400"></i>
                         <span class="text-[10px] font-bold text-white uppercase tracking-widest">SCHOOL</span>
                     </div>
@@ -846,7 +1026,8 @@
                             <h3 class="text-xl font-bold mb-1">Casiers Sécurisés</h3>
                             <p class="text-textMuted text-sm">2024 • Arduino • RFID</p>
                         </div>
-                        <div class="bg-cyan-600 p-3 rounded-full opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300 shadow-lg shadow-cyan-900/50">
+                        <div
+                            class="bg-cyan-600 p-3 rounded-full opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300 shadow-lg shadow-cyan-900/50">
                             <i data-lucide="arrow-right" class="w-6 h-6 text-white"></i>
                         </div>
                     </div>
@@ -856,24 +1037,30 @@
     </main>
 
     <!-- FOOTER GLOBAL -->
-    <footer class="py-12 flex flex-col md:flex-row justify-between items-center gap-6 text-sm text-textMuted w-full max-w-6xl z-10 mt-auto">
+    <footer
+        class="py-12 flex flex-col md:flex-row justify-between items-center gap-6 text-sm text-textMuted w-full max-w-6xl z-10 mt-auto">
         <p>&copy; 2026 Marius Coudurier.</p>
     </footer>
 
     <!-- ================= PAGE AMBILIGHT ================= -->
     <main id="ambilightPage" class="hidden-page w-full max-w-7xl mt-24 space-y-24 z-20 pb-24">
-        <header class="animate-slide-up relative overflow-hidden bg-surface border border-border rounded-3xl p-8 md:p-12">
-            <div class="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-yellow-900/10 to-transparent pointer-events-none"></div>
-            
+        <header
+            class="animate-slide-up relative overflow-hidden bg-surface border border-border rounded-3xl p-8 md:p-12">
+            <div
+                class="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-yellow-900/10 to-transparent pointer-events-none">
+            </div>
+
             <div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-12">
                 <div class="lg:col-span-8 space-y-8">
                     <div>
-                        <span class="text-sm font-bold text-yellow-400 uppercase tracking-wider mb-2 block">Système Lumineux IoT</span>
+                        <span class="text-sm font-bold text-yellow-400 uppercase tracking-wider mb-2 block">Système
+                            Lumineux IoT</span>
                         <h1 class="text-4xl md:text-5xl font-bold mb-4 tracking-tight leading-tight">
                             Système Ambilight Maison
                         </h1>
                         <p class="text-yellow-500 font-medium flex items-center gap-2">
-                            <i data-lucide="lightbulb" class="w-5 h-5"></i> Alternative haute performance aux écosystèmes fermés.
+                            <i data-lucide="lightbulb" class="w-5 h-5"></i> Alternative haute performance aux
+                            écosystèmes fermés.
                         </p>
                     </div>
 
@@ -882,39 +1069,53 @@
                             <i data-lucide="info" class="text-yellow-400 w-6 h-6"></i> Résumé du Projet
                         </h2>
                         <p class="text-textMuted leading-relaxed mb-6">
-                            Ingénierie d'un système lumineux connecté (IoT) piloté par microcontrôleur. Une alternative haute performance aux écosystèmes fermés, réalisée pour moins de 15€.
+                            Ingénierie d'un système lumineux connecté (IoT) piloté par microcontrôleur. Une alternative
+                            haute performance aux écosystèmes fermés, réalisée pour moins de 15€.
                         </p>
 
                         <h2 class="text-xl font-bold text-white mb-4 mt-8 flex items-center gap-3">
                             <i data-lucide="cpu" class="text-yellow-400 w-6 h-6"></i> Intégration Hardware & WLED
                         </h2>
                         <ul class="text-textMuted leading-relaxed mb-6 list-disc list-inside space-y-2">
-                            <li><strong>Microcontrôleur ESP8266 (Wemos D1 Mini) :</strong> Choisi pour sa connectivité Wi-Fi native et sa compatibilité parfaite avec l'écosystème open-source WLED.</li>
-                            <li><strong>Rubans LED WS2812B :</strong> Utilisation de bandes haute densité avec des soudures de précision aux angles de l'écran pour garantir une continuité parfaite.</li>
-                            <li><strong>Alimentation 5V sur-mesure :</strong> Conception d'un circuit capable de supporter les pics d'intensité importants lors des flashs lumineux, sans aucun risque de chute de tension.</li>
+                            <li><strong>Microcontrôleur ESP8266 (Wemos D1 Mini) :</strong> Choisi pour sa connectivité
+                                Wi-Fi native et sa compatibilité parfaite avec l'écosystème open-source WLED.</li>
+                            <li><strong>Rubans LED WS2812B :</strong> Utilisation de bandes haute densité avec des
+                                soudures de précision aux angles de l'écran pour garantir une continuité parfaite.</li>
+                            <li><strong>Alimentation 5V sur-mesure :</strong> Conception d'un circuit capable de
+                                supporter les pics d'intensité importants lors des flashs lumineux, sans aucun risque de
+                                chute de tension.</li>
                         </ul>
 
                         <h2 class="text-xl font-bold text-white mb-4 mt-8 flex items-center gap-3">
                             <i data-lucide="wifi" class="text-yellow-400 w-6 h-6"></i> Synchronisation & Réseau
                         </h2>
                         <ul class="text-textMuted leading-relaxed mb-6 list-disc list-inside space-y-2">
-                            <li><strong>Protocole UDP :</strong> Transfert de paquets à haute fréquence via le réseau local pour assurer la synchronisation entre l'image du PC et les LEDs.</li>
-                            <li><strong>Performances :</strong> Flux de données non bloquant garantissant une colorimétrie dynamique à plus de 60 images par seconde avec une latence quasi-nulle.</li>
-                            <li><strong>Résultat :</strong> Une immersion instantanée qui surpasse la réactivité de nombreuses solutions commerciales propriétaires.</li>
+                            <li><strong>Protocole UDP :</strong> Transfert de paquets à haute fréquence via le réseau
+                                local pour assurer la synchronisation entre l'image du PC et les LEDs.</li>
+                            <li><strong>Performances :</strong> Flux de données non bloquant garantissant une
+                                colorimétrie dynamique à plus de 60 images par seconde avec une latence quasi-nulle.
+                            </li>
+                            <li><strong>Résultat :</strong> Une immersion instantanée qui surpasse la réactivité de
+                                nombreuses solutions commerciales propriétaires.</li>
                         </ul>
                     </div>
                 </div>
 
                 <div class="lg:col-span-4 flex flex-col items-center pt-8 gap-6">
-                    <div class="relative w-full rounded-2xl overflow-hidden shadow-[0_0_30px_rgba(234,179,8,0.2)] border border-white/10 group/poster cursor-zoom-in" onclick="openPosterZoom('https://i.ibb.co/JRmm2sXX/Gemini-Generated-Image-ur39e6ur39e6ur39-cleanup.png')">
-                        <img src="https://i.ibb.co/JRmm2sXX/Gemini-Generated-Image-ur39e6ur39e6ur39-cleanup.png" alt="Ambilight System" class="w-full h-auto object-cover group-hover/poster:scale-105 transition-all duration-500">
-                        <div class="absolute inset-0 bg-yellow-600/20 opacity-0 group-hover/poster:opacity-100 transition-opacity flex items-center justify-center">
+                    <div class="relative w-full rounded-2xl overflow-hidden shadow-[0_0_30px_rgba(234,179,8,0.2)] border border-white/10 group/poster cursor-zoom-in"
+                        onclick="openPosterZoom('https://i.ibb.co/JRmm2sXX/Gemini-Generated-Image-ur39e6ur39e6ur39-cleanup.png')">
+                        <img src="https://i.ibb.co/JRmm2sXX/Gemini-Generated-Image-ur39e6ur39e6ur39-cleanup.png"
+                            alt="Ambilight System"
+                            class="w-full h-auto object-cover group-hover/poster:scale-105 transition-all duration-500">
+                        <div
+                            class="absolute inset-0 bg-yellow-600/20 opacity-0 group-hover/poster:opacity-100 transition-opacity flex items-center justify-center">
                             <div class="bg-black/60 backdrop-blur-md p-3 rounded-full border border-white/20">
                                 <i data-lucide="zoom-in" class="text-white w-6 h-6"></i>
                             </div>
                         </div>
                     </div>
-                    <p class="text-xs text-textMuted font-medium uppercase tracking-widest italic mt-4 text-center">Cliquez pour agrandir l'image</p>
+                    <p class="text-xs text-textMuted font-medium uppercase tracking-widest italic mt-4 text-center">
+                        Cliquez pour agrandir l'image</p>
                 </div>
             </div>
         </header>
@@ -1006,7 +1207,8 @@
                         - Live Demo</span>
                 </div>
                 <!-- J'ai mis votre lien lovable.app par défaut, il pourra être remplacé par Vercel si besoin -->
-                <iframe src="https://cal-tracker-gamma.vercel.app/" allow="camera; microphone; fullscreen; display-capture"
+                <iframe src="https://cal-tracker-gamma.vercel.app/"
+                    allow="camera; microphone; fullscreen; display-capture"
                     style="width: 100%; height: calc(100% - 40px); border: none;"
                     title="CalTracker Interactive Demo"></iframe>
             </div>
@@ -1033,7 +1235,8 @@
 
             <div class="relative z-10 space-y-8">
                 <div class="space-y-4">
-                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400 pb-2">
+                    <h1
+                        class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400 pb-2">
                         Thermomètre de Bain
                     </h1>
 
@@ -1138,35 +1341,50 @@
             </h3>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                 <!-- Cahier des charges -->
-                <a href="./data/cahier_des_charges.pdf" target="_blank" onclick="setTimeout(() => { const a = document.createElement('a'); a.href='./data/cahier_des_charges.pdf'; a.download='cahier_des_charges.pdf'; a.click(); }, 500);" class="bg-surface hover:bg-surfaceHover border border-border hover:border-blue-500/50 p-6 rounded-2xl flex flex-col items-center justify-center gap-3 transition-all group shadow-lg hover:shadow-blue-900/20">
-                    <div class="w-14 h-14 rounded-xl bg-blue-500/10 flex items-center justify-center text-blue-400 group-hover:scale-110 transition-transform">
+                <a href="./data/cahier_des_charges.pdf" target="_blank"
+                    onclick="setTimeout(() => { const a = document.createElement('a'); a.href='./data/cahier_des_charges.pdf'; a.download='cahier_des_charges.pdf'; a.click(); }, 500);"
+                    class="bg-surface hover:bg-surfaceHover border border-border hover:border-blue-500/50 p-6 rounded-2xl flex flex-col items-center justify-center gap-3 transition-all group shadow-lg hover:shadow-blue-900/20">
+                    <div
+                        class="w-14 h-14 rounded-xl bg-blue-500/10 flex items-center justify-center text-blue-400 group-hover:scale-110 transition-transform">
                         <i data-lucide="file-text" class="w-7 h-7"></i>
                     </div>
                     <span class="text-sm font-bold text-white text-center mt-2">Cahier des Charges</span>
                 </a>
-                
+
                 <!-- DDC -->
-                <a href="./data/DDC.pdf" target="_blank" onclick="setTimeout(() => { const a = document.createElement('a'); a.href='./data/DDC.pdf'; a.download='DDC.pdf'; a.click(); }, 500);" class="bg-surface hover:bg-surfaceHover border border-border hover:border-purple-500/50 p-6 rounded-2xl flex flex-col items-center justify-center gap-3 transition-all group shadow-lg hover:shadow-purple-900/20">
-                    <div class="w-14 h-14 rounded-xl bg-purple-500/10 flex items-center justify-center text-purple-400 group-hover:scale-110 transition-transform">
+                <a href="./data/DDC.pdf" target="_blank"
+                    onclick="setTimeout(() => { const a = document.createElement('a'); a.href='./data/DDC.pdf'; a.download='DDC.pdf'; a.click(); }, 500);"
+                    class="bg-surface hover:bg-surfaceHover border border-border hover:border-purple-500/50 p-6 rounded-2xl flex flex-col items-center justify-center gap-3 transition-all group shadow-lg hover:shadow-purple-900/20">
+                    <div
+                        class="w-14 h-14 rounded-xl bg-purple-500/10 flex items-center justify-center text-purple-400 group-hover:scale-110 transition-transform">
                         <i data-lucide="pen-tool" class="w-7 h-7"></i>
                     </div>
-                    <span class="text-sm font-bold text-white text-center mt-2">Dossier de Conception<br><span class="text-xs text-textMuted font-normal mt-1 block">DDC</span></span>
+                    <span class="text-sm font-bold text-white text-center mt-2">Dossier de Conception<br><span
+                            class="text-xs text-textMuted font-normal mt-1 block">DDC</span></span>
                 </a>
 
                 <!-- DDF -->
-                <a href="./data/DDF.pdf" target="_blank" onclick="setTimeout(() => { const a = document.createElement('a'); a.href='./data/DDF.pdf'; a.download='DDF.pdf'; a.click(); }, 500);" class="bg-surface hover:bg-surfaceHover border border-border hover:border-orange-500/50 p-6 rounded-2xl flex flex-col items-center justify-center gap-3 transition-all group shadow-lg hover:shadow-orange-900/20">
-                    <div class="w-14 h-14 rounded-xl bg-orange-500/10 flex items-center justify-center text-orange-400 group-hover:scale-110 transition-transform">
+                <a href="./data/DDF.pdf" target="_blank"
+                    onclick="setTimeout(() => { const a = document.createElement('a'); a.href='./data/DDF.pdf'; a.download='DDF.pdf'; a.click(); }, 500);"
+                    class="bg-surface hover:bg-surfaceHover border border-border hover:border-orange-500/50 p-6 rounded-2xl flex flex-col items-center justify-center gap-3 transition-all group shadow-lg hover:shadow-orange-900/20">
+                    <div
+                        class="w-14 h-14 rounded-xl bg-orange-500/10 flex items-center justify-center text-orange-400 group-hover:scale-110 transition-transform">
                         <i data-lucide="wrench" class="w-7 h-7"></i>
                     </div>
-                    <span class="text-sm font-bold text-white text-center mt-2">Dossier de Fabrication<br><span class="text-xs text-textMuted font-normal mt-1 block">DDF</span></span>
+                    <span class="text-sm font-bold text-white text-center mt-2">Dossier de Fabrication<br><span
+                            class="text-xs text-textMuted font-normal mt-1 block">DDF</span></span>
                 </a>
 
                 <!-- DDV -->
-                <a href="./data/DDV.pdf" target="_blank" onclick="setTimeout(() => { const a = document.createElement('a'); a.href='./data/DDV.pdf'; a.download='DDV.pdf'; a.click(); }, 500);" class="bg-surface hover:bg-surfaceHover border border-border hover:border-green-500/50 p-6 rounded-2xl flex flex-col items-center justify-center gap-3 transition-all group shadow-lg hover:shadow-green-900/20">
-                    <div class="w-14 h-14 rounded-xl bg-green-500/10 flex items-center justify-center text-green-400 group-hover:scale-110 transition-transform">
+                <a href="./data/DDV.pdf" target="_blank"
+                    onclick="setTimeout(() => { const a = document.createElement('a'); a.href='./data/DDV.pdf'; a.download='DDV.pdf'; a.click(); }, 500);"
+                    class="bg-surface hover:bg-surfaceHover border border-border hover:border-green-500/50 p-6 rounded-2xl flex flex-col items-center justify-center gap-3 transition-all group shadow-lg hover:shadow-green-900/20">
+                    <div
+                        class="w-14 h-14 rounded-xl bg-green-500/10 flex items-center justify-center text-green-400 group-hover:scale-110 transition-transform">
                         <i data-lucide="check-square" class="w-7 h-7"></i>
                     </div>
-                    <span class="text-sm font-bold text-white text-center mt-2">Dossier de Vérification<br><span class="text-xs text-textMuted font-normal mt-1 block">DDV</span></span>
+                    <span class="text-sm font-bold text-white text-center mt-2">Dossier de Vérification<br><span
+                            class="text-xs text-textMuted font-normal mt-1 block">DDV</span></span>
                 </a>
             </div>
         </section>
@@ -1179,27 +1397,37 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 relative">
 
                 <!-- Étape 01 -->
-                <div class="group bg-surface p-6 rounded-2xl border border-border hover:border-blue-500/50 transition-all duration-300 relative overflow-hidden flex flex-col h-full">
-                    <div class="absolute top-4 right-4 text-[40px] font-bold text-white/5 font-mono group-hover:text-blue-500/10 transition-colors">01</div>
-                    <div class="w-10 h-10 rounded-xl bg-blue-500/10 flex items-center justify-center mb-4 text-blue-400 group-hover:scale-110 transition-transform">
+                <div
+                    class="group bg-surface p-6 rounded-2xl border border-border hover:border-blue-500/50 transition-all duration-300 relative overflow-hidden flex flex-col h-full">
+                    <div
+                        class="absolute top-4 right-4 text-[40px] font-bold text-white/5 font-mono group-hover:text-blue-500/10 transition-colors">
+                        01</div>
+                    <div
+                        class="w-10 h-10 rounded-xl bg-blue-500/10 flex items-center justify-center mb-4 text-blue-400 group-hover:scale-110 transition-transform">
                         <i data-lucide="brain-circuit" class="w-5 h-5"></i>
                     </div>
                     <h4 class="text-lg font-bold text-white mb-2">Analyse & Logique</h4>
-                    <p class="text-sm text-textMuted leading-relaxed flex-grow">Traduction des contraintes physiques en signaux électriques exploitables. Définition des seuils mathématiques.</p>
+                    <p class="text-sm text-textMuted leading-relaxed flex-grow">Traduction des contraintes physiques en
+                        signaux électriques exploitables. Définition des seuils mathématiques.</p>
                 </div>
 
                 <!-- Étape 02 : Virtualisation (CLIQUABLE) -->
                 <div onclick="openGallery('simulationGallery')"
                     class="group bg-surface p-6 rounded-2xl border border-border hover:border-blue-500/50 transition-all duration-300 relative overflow-hidden cursor-pointer shadow-lg hover:shadow-blue-900/20 flex flex-col h-full">
-                    <div class="absolute top-4 right-4 text-[40px] font-bold text-white/5 font-mono group-hover:text-blue-500/10 transition-colors">02</div>
-                    <div class="w-10 h-10 rounded-xl bg-blue-500/10 flex items-center justify-center mb-4 text-blue-400 group-hover:scale-110 transition-transform">
+                    <div
+                        class="absolute top-4 right-4 text-[40px] font-bold text-white/5 font-mono group-hover:text-blue-500/10 transition-colors">
+                        02</div>
+                    <div
+                        class="w-10 h-10 rounded-xl bg-blue-500/10 flex items-center justify-center mb-4 text-blue-400 group-hover:scale-110 transition-transform">
                         <i data-lucide="laptop-2" class="w-5 h-5"></i>
                     </div>
                     <h4 class="text-lg font-bold text-white mb-2">Virtualisation</h4>
-                    <p class="text-sm text-textMuted leading-relaxed mb-6 flex-grow">Conception complète du schéma sur logiciel CAO et simulation virtuelle du comportement du circuit.</p>
-                    
+                    <p class="text-sm text-textMuted leading-relaxed mb-6 flex-grow">Conception complète du schéma sur
+                        logiciel CAO et simulation virtuelle du comportement du circuit.</p>
+
                     <div class="mt-auto pt-4 border-t border-white/5">
-                        <button class="w-full py-2 bg-blue-500/10 hover:bg-blue-500 text-blue-400 hover:text-white rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-2">
+                        <button
+                            class="w-full py-2 bg-blue-500/10 hover:bg-blue-500 text-blue-400 hover:text-white rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-2">
                             <i data-lucide="image" class="w-4 h-4"></i> VOIR LES PHOTOS
                         </button>
                     </div>
@@ -1208,15 +1436,20 @@
                 <!-- Étape 03 : Création du Circuit (CLIQUABLE) -->
                 <div onclick="openGallery('fabricationGallery')"
                     class="group bg-surface p-6 rounded-2xl border border-border hover:border-orange-500/50 transition-all duration-300 relative overflow-hidden cursor-pointer shadow-lg hover:shadow-orange-900/20 flex flex-col h-full">
-                    <div class="absolute top-4 right-4 text-[40px] font-bold text-white/5 font-mono group-hover:text-orange-500/10 transition-colors">03</div>
-                    <div class="w-10 h-10 rounded-xl bg-orange-500/10 flex items-center justify-center mb-4 text-orange-400 group-hover:scale-110 transition-transform">
+                    <div
+                        class="absolute top-4 right-4 text-[40px] font-bold text-white/5 font-mono group-hover:text-orange-500/10 transition-colors">
+                        03</div>
+                    <div
+                        class="w-10 h-10 rounded-xl bg-orange-500/10 flex items-center justify-center mb-4 text-orange-400 group-hover:scale-110 transition-transform">
                         <i data-lucide="flask-conical" class="w-5 h-5"></i>
                     </div>
                     <h4 class="text-lg font-bold text-white mb-2">Création du Circuit</h4>
-                    <p class="text-sm text-textMuted leading-relaxed mb-6 flex-grow">Transfert du plan de routage sur cuivre par insolation UV et gravure chimique.</p>
-                    
+                    <p class="text-sm text-textMuted leading-relaxed mb-6 flex-grow">Transfert du plan de routage sur
+                        cuivre par insolation UV et gravure chimique.</p>
+
                     <div class="mt-auto pt-4 border-t border-white/5">
-                        <button class="w-full py-2 bg-orange-500/10 hover:bg-orange-500 text-orange-400 hover:text-white rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-2">
+                        <button
+                            class="w-full py-2 bg-orange-500/10 hover:bg-orange-500 text-orange-400 hover:text-white rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-2">
                             <i data-lucide="image" class="w-4 h-4"></i> VOIR LES PHOTOS
                         </button>
                     </div>
@@ -1225,42 +1458,57 @@
                 <!-- Étape 04 : Usinage & Assemblage (CLIQUABLE) -->
                 <div onclick="openGallery('usinageGallery')"
                     class="group bg-surface p-6 rounded-2xl border border-border hover:border-orange-500/50 transition-all duration-300 relative overflow-hidden cursor-pointer shadow-lg hover:shadow-orange-900/20 flex flex-col h-full">
-                    <div class="absolute top-4 right-4 text-[40px] font-bold text-white/5 font-mono group-hover:text-orange-500/10 transition-colors">04</div>
-                    <div class="w-10 h-10 rounded-xl bg-orange-500/10 flex items-center justify-center mb-4 text-orange-400 group-hover:scale-110 transition-transform">
+                    <div
+                        class="absolute top-4 right-4 text-[40px] font-bold text-white/5 font-mono group-hover:text-orange-500/10 transition-colors">
+                        04</div>
+                    <div
+                        class="w-10 h-10 rounded-xl bg-orange-500/10 flex items-center justify-center mb-4 text-orange-400 group-hover:scale-110 transition-transform">
                         <i data-lucide="wrench" class="w-5 h-5"></i>
                     </div>
                     <h4 class="text-lg font-bold text-white mb-2">Usinage & Assemblage</h4>
-                    <p class="text-sm text-textMuted leading-relaxed mb-6 flex-grow">Perçage de précision et soudure manuelle des composants. Montage final.</p>
-                    
+                    <p class="text-sm text-textMuted leading-relaxed mb-6 flex-grow">Perçage de précision et soudure
+                        manuelle des composants. Montage final.</p>
+
                     <div class="mt-auto pt-4 border-t border-white/5">
-                        <button class="w-full py-2 bg-orange-500/10 hover:bg-orange-500 text-orange-400 hover:text-white rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-2">
+                        <button
+                            class="w-full py-2 bg-orange-500/10 hover:bg-orange-500 text-orange-400 hover:text-white rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-2">
                             <i data-lucide="image" class="w-4 h-4"></i> VOIR LES PHOTOS
                         </button>
                     </div>
                 </div>
 
                 <!-- Étape 05 -->
-                <div class="group bg-surface p-6 rounded-2xl border border-border hover:border-green-500/50 transition-all duration-300 relative overflow-hidden flex flex-col h-full">
-                    <div class="absolute top-4 right-4 text-[40px] font-bold text-white/5 font-mono group-hover:text-green-500/10 transition-colors">05</div>
-                    <div class="w-10 h-10 rounded-xl bg-green-500/10 flex items-center justify-center mb-4 text-green-400 group-hover:scale-110 transition-transform">
+                <div
+                    class="group bg-surface p-6 rounded-2xl border border-border hover:border-green-500/50 transition-all duration-300 relative overflow-hidden flex flex-col h-full">
+                    <div
+                        class="absolute top-4 right-4 text-[40px] font-bold text-white/5 font-mono group-hover:text-green-500/10 transition-colors">
+                        05</div>
+                    <div
+                        class="w-10 h-10 rounded-xl bg-green-500/10 flex items-center justify-center mb-4 text-green-400 group-hover:scale-110 transition-transform">
                         <i data-lucide="search" class="w-5 h-5"></i>
                     </div>
                     <h4 class="text-lg font-bold text-white mb-2">Contrôle Structurel</h4>
-                    <p class="text-sm text-textMuted leading-relaxed flex-grow">Inspection visuelle des soudures et test de continuité électrique.</p>
+                    <p class="text-sm text-textMuted leading-relaxed flex-grow">Inspection visuelle des soudures et test
+                        de continuité électrique.</p>
                 </div>
 
                 <!-- Étape 06 : Validation Fonctionnelle (CLIQUABLE) -->
                 <div onclick="openGallery('validationGallery')"
                     class="group bg-surface p-6 rounded-2xl border border-border hover:border-green-500/50 transition-all duration-300 relative overflow-hidden cursor-pointer shadow-lg hover:shadow-green-900/20 flex flex-col h-full">
-                    <div class="absolute top-4 right-4 text-[40px] font-bold text-white/5 font-mono group-hover:text-green-500/10 transition-colors">06</div>
-                    <div class="w-10 h-10 rounded-xl bg-green-500/10 flex items-center justify-center mb-4 text-green-400 group-hover:scale-110 transition-transform">
+                    <div
+                        class="absolute top-4 right-4 text-[40px] font-bold text-white/5 font-mono group-hover:text-green-500/10 transition-colors">
+                        06</div>
+                    <div
+                        class="w-10 h-10 rounded-xl bg-green-500/10 flex items-center justify-center mb-4 text-green-400 group-hover:scale-110 transition-transform">
                         <i data-lucide="zap" class="w-5 h-5"></i>
                     </div>
                     <h4 class="text-lg font-bold text-white mb-2">Validation Fonctionnelle</h4>
-                    <p class="text-sm text-textMuted leading-relaxed mb-6 flex-grow">Mise sous tension et tests dynamiques de température.</p>
-                    
+                    <p class="text-sm text-textMuted leading-relaxed mb-6 flex-grow">Mise sous tension et tests
+                        dynamiques de température.</p>
+
                     <div class="mt-auto pt-4 border-t border-white/5">
-                        <button class="w-full py-2 bg-green-500/10 hover:bg-green-500 text-green-400 hover:text-white rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-2">
+                        <button
+                            class="w-full py-2 bg-green-500/10 hover:bg-green-500 text-green-400 hover:text-white rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-2">
                             <i data-lucide="image" class="w-4 h-4"></i> VOIR LES PHOTOS
                         </button>
                     </div>
@@ -1545,23 +1793,28 @@
     </div>
 
     <!-- ================= MODAL ZOOM AFFICHE ================= -->
-    <div id="posterZoomOverlay" class="fixed inset-0 z-[100] bg-black/95 hidden backdrop-blur-xl animate-fade-in flex flex-col">
+    <div id="posterZoomOverlay"
+        class="fixed inset-0 z-[100] bg-black/95 hidden backdrop-blur-xl animate-fade-in flex flex-col">
         <!-- Header Controls -->
-        <div class="flex justify-between items-center p-6 border-b border-white/10 bg-black/40 backdrop-blur-md relative z-[110]">
+        <div
+            class="flex justify-between items-center p-6 border-b border-white/10 bg-black/40 backdrop-blur-md relative z-[110]">
             <h3 class="text-white font-bold flex items-center gap-2">
                 <i data-lucide="image" class="text-purple-400"></i> Inspection de l'Affiche
             </h3>
             <div class="flex items-center gap-4">
                 <div class="flex items-center bg-white/5 border border-white/10 rounded-full p-1">
-                    <button onclick="zoomPoster(-0.2)" class="p-2 hover:bg-white/10 rounded-full text-white transition-colors">
+                    <button onclick="zoomPoster(-0.2)"
+                        class="p-2 hover:bg-white/10 rounded-full text-white transition-colors">
                         <i data-lucide="zoom-out" class="w-5 h-5"></i>
                     </button>
                     <span id="zoomLevel" class="px-4 text-xs font-mono text-white min-w-[60px] text-center">100%</span>
-                    <button onclick="zoomPoster(0.2)" class="p-2 hover:bg-white/10 rounded-full text-white transition-colors">
+                    <button onclick="zoomPoster(0.2)"
+                        class="p-2 hover:bg-white/10 rounded-full text-white transition-colors">
                         <i data-lucide="zoom-in" class="w-5 h-5"></i>
                     </button>
                 </div>
-                <button onclick="closePosterZoom()" class="p-2 bg-red-500/10 hover:bg-red-500 text-red-500 hover:text-white rounded-full transition-all">
+                <button onclick="closePosterZoom()"
+                    class="p-2 bg-red-500/10 hover:bg-red-500 text-red-500 hover:text-white rounded-full transition-all">
                     <i data-lucide="x" class="w-6 h-6"></i>
                 </button>
             </div>
@@ -1569,8 +1822,10 @@
 
         <!-- Zoom Area -->
         <div class="flex-grow relative overflow-hidden cursor-grab active:cursor-grabbing" id="zoomContainer">
-            <div id="zoomContent" class="absolute inset-0 flex items-center justify-center transition-transform duration-200 ease-out origin-center">
-                <img id="zoomedImage" src="" alt="Affiche Zoom" class="max-h-[90vh] w-auto pointer-events-none select-none">
+            <div id="zoomContent"
+                class="absolute inset-0 flex items-center justify-center transition-transform duration-200 ease-out origin-center">
+                <img id="zoomedImage" src="" alt="Affiche Zoom"
+                    class="max-h-[90vh] w-auto pointer-events-none select-none">
             </div>
         </div>
 
@@ -1582,24 +1837,32 @@
 
     <!-- ================= PAGE SMART SPEAKER ================= -->
     <main id="smartSpeakerPage" class="hidden-page w-full max-w-7xl mt-24 space-y-24 z-20 pb-24">
-        <header class="animate-slide-up relative overflow-hidden bg-surface border border-border rounded-3xl p-8 md:p-12">
-            <div class="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-pink-900/10 to-transparent pointer-events-none"></div>
-            
+        <header
+            class="animate-slide-up relative overflow-hidden bg-surface border border-border rounded-3xl p-8 md:p-12">
+            <div
+                class="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-pink-900/10 to-transparent pointer-events-none">
+            </div>
+
             <div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-12">
                 <div class="lg:col-span-8 space-y-8">
                     <div>
-                        <span class="text-sm font-bold text-pink-400 uppercase tracking-wider mb-2 block">Audio & Menuiserie</span>
+                        <span class="text-sm font-bold text-pink-400 uppercase tracking-wider mb-2 block">Audio &
+                            Menuiserie</span>
                         <h1 class="text-4xl md:text-5xl font-bold mb-4 tracking-tight leading-tight">
                             Google Home Upgrade : Hack Audio IoT
                         </h1>
                         <p class="text-pink-500 font-medium flex items-center gap-2">
-                            <i data-lucide="speaker" class="w-5 h-5"></i> Optimisation acoustique d'un assistant connecté
+                            <i data-lucide="speaker" class="w-5 h-5"></i> Optimisation acoustique d'un assistant
+                            connecté
                         </p>
                     </div>
 
                     <div class="max-w-4xl prose prose-invert">
                         <p class="text-textMuted leading-relaxed mb-6 text-lg">
-                            <strong>Pitch :</strong> Optimisation acoustique d'un assistant connecté (Google Home Mini) par le repiquage de son amplification interne vers des enceintes bibliothèques Philips haut de gamme, et conception/fabrication d'un meuble dédié pour intégrer proprement l'ensemble du système.
+                            <strong>Pitch :</strong> Optimisation acoustique d'un assistant connecté (Google Home Mini)
+                            par le repiquage de son amplification interne vers des enceintes bibliothèques Philips haut
+                            de gamme, et conception/fabrication d'un meuble dédié pour intégrer proprement l'ensemble du
+                            système.
                         </p>
 
                         <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
@@ -1624,17 +1887,22 @@
                             <i data-lucide="settings" class="text-pink-400 w-6 h-6"></i> Hack Matériel (Détournement)
                         </h2>
                         <ul class="text-textMuted leading-relaxed mb-6 list-disc list-inside space-y-2">
-                            <li>Désassemblage complet du Google Home Mini pour isoler la carte électronique et le haut-parleur d'origine.</li>
-                            <li>Repiquage et soudure des câbles audio directement sur les sorties de l'amplificateur intégré vers le câblage passif des enceintes Philips.</li>
+                            <li>Désassemblage complet du Google Home Mini pour isoler la carte électronique et le
+                                haut-parleur d'origine.</li>
+                            <li>Repiquage et soudure des câbles audio directement sur les sorties de l'amplificateur
+                                intégré vers le câblage passif des enceintes Philips.</li>
                         </ul>
 
                         <h2 class="text-xl font-bold text-white mb-4 mt-8 flex items-center gap-3">
                             <i data-lucide="box" class="text-pink-400 w-6 h-6"></i> Modélisation Numérique & Plans
                         </h2>
                         <ul class="text-textMuted leading-relaxed mb-6 list-disc list-inside space-y-2">
-                            <li>Réalisation de <strong>plans numériques</strong> pour valider l'ergonomie, l'esthétique et la gestion spatiale.</li>
-                            <li><strong>Épaisseur du bois :</strong> Calculée pour assurer la rigidité structurelle et éviter les vibrations parasites.</li>
-                            <li><strong>Volume utile :</strong> Ajustement au millimètre pour un encastrement parfait des enceintes.</li>
+                            <li>Réalisation de <strong>plans numériques</strong> pour valider l'ergonomie, l'esthétique
+                                et la gestion spatiale.</li>
+                            <li><strong>Épaisseur du bois :</strong> Calculée pour assurer la rigidité structurelle et
+                                éviter les vibrations parasites.</li>
+                            <li><strong>Volume utile :</strong> Ajustement au millimètre pour un encastrement parfait
+                                des enceintes.</li>
                         </ul>
 
                         <h2 class="text-xl font-bold text-white mb-4 mt-8 flex items-center gap-3">
@@ -1643,7 +1911,8 @@
                         <ul class="text-textMuted leading-relaxed mb-6 list-disc list-inside space-y-2">
                             <li>Exploitation des cotes numériques pour la découpe précise des panneaux de bois.</li>
                             <li>Perçage de passages de câbles invisibles pour les liaisons audio et l'alimentation.</li>
-                            <li>Méthodes de fixation (vissage invisible / tourillons) pour garantir la stabilité et l'accessibilité de maintenance.</li>
+                            <li>Méthodes de fixation (vissage invisible / tourillons) pour garantir la stabilité et
+                                l'accessibilité de maintenance.</li>
                         </ul>
 
                         <h2 class="text-xl font-bold text-white mb-4 mt-8 flex items-center gap-3">
@@ -1660,15 +1929,20 @@
                 </div>
 
                 <div class="lg:col-span-4 flex flex-col items-center pt-8 gap-6">
-                    <div class="relative w-full rounded-2xl overflow-hidden shadow-[0_0_30px_rgba(236,72,153,0.2)] border border-white/10 group/poster cursor-zoom-in" onclick="openPosterZoom('https://i.ibb.co/S73hHJvH/Gemini-Generated-Image-lnd0i4lnd0i4lnd0-cleanup.png')">
-                        <img src="https://i.ibb.co/S73hHJvH/Gemini-Generated-Image-lnd0i4lnd0i4lnd0-cleanup.png" alt="Google Home Upgrade" class="w-full h-auto object-cover group-hover/poster:scale-105 transition-all duration-500">
-                        <div class="absolute inset-0 bg-pink-600/20 opacity-0 group-hover/poster:opacity-100 transition-opacity flex items-center justify-center">
+                    <div class="relative w-full rounded-2xl overflow-hidden shadow-[0_0_30px_rgba(236,72,153,0.2)] border border-white/10 group/poster cursor-zoom-in"
+                        onclick="openPosterZoom('https://i.ibb.co/S73hHJvH/Gemini-Generated-Image-lnd0i4lnd0i4lnd0-cleanup.png')">
+                        <img src="https://i.ibb.co/S73hHJvH/Gemini-Generated-Image-lnd0i4lnd0i4lnd0-cleanup.png"
+                            alt="Google Home Upgrade"
+                            class="w-full h-auto object-cover group-hover/poster:scale-105 transition-all duration-500">
+                        <div
+                            class="absolute inset-0 bg-pink-600/20 opacity-0 group-hover/poster:opacity-100 transition-opacity flex items-center justify-center">
                             <div class="bg-black/60 backdrop-blur-md p-3 rounded-full border border-white/20">
                                 <i data-lucide="zoom-in" class="text-white w-6 h-6"></i>
                             </div>
                         </div>
                     </div>
-                    <p class="text-xs text-textMuted font-medium uppercase tracking-widest italic mt-4 text-center">Cliquez pour agrandir l'image</p>
+                    <p class="text-xs text-textMuted font-medium uppercase tracking-widest italic mt-4 text-center">
+                        Cliquez pour agrandir l'image</p>
                 </div>
             </div>
         </header>
@@ -1685,7 +1959,8 @@
                     class="px-3 py-1 rounded-full border border-border text-xs font-mono text-textMuted">Personnel</span>
             </div>
             <h1 class="text-4xl md:text-6xl font-bold mb-6">Projet <span
-                    class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-400 to-orange-400">Domotique</span></h1>
+                    class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-400 to-orange-400">Domotique</span>
+            </h1>
         </header>
 
 
@@ -1711,7 +1986,8 @@
                                 <i data-lucide="network" class="text-blue-400 w-5 h-5"></i> Le Principe
                             </h3>
                             <p class="text-base text-textMuted leading-relaxed">
-                                Centraliser tous les appareils et capteurs pour créer des automatisations intelligentes, quelle que soit leur marque, pour un contrôle total et simplifié.
+                                Centraliser tous les appareils et capteurs pour créer des automatisations intelligentes,
+                                quelle que soit leur marque, pour un contrôle total et simplifié.
                             </p>
                         </div>
                     </div>
@@ -1728,7 +2004,8 @@
                             </div>
                             <h4 class="text-lg font-bold text-white">Confort & Bien-être</h4>
                         </div>
-                        <p class="text-sm text-textMuted leading-relaxed">Automatisation déclenchant le préchauffage du lit via une prise intelligente 15 minutes avant le coucher.</p>
+                        <p class="text-sm text-textMuted leading-relaxed">Automatisation déclenchant le préchauffage du
+                            lit via une prise intelligente 15 minutes avant le coucher.</p>
                     </div>
 
                     <div class="bg-surfaceHover p-6 rounded-2xl border border-white/5 flex flex-col gap-4">
@@ -1738,7 +2015,9 @@
                             </div>
                             <h4 class="text-lg font-bold text-white">Départ & Sécurité Énergétique</h4>
                         </div>
-                        <p class="text-sm text-textMuted leading-relaxed">Grâce à la géolocalisation, le système détecte mon départ et coupe automatiquement l'alimentation de l'ensemble des appareils (sécurité et économie d'énergie).</p>
+                        <p class="text-sm text-textMuted leading-relaxed">Grâce à la géolocalisation, le système détecte
+                            mon départ et coupe automatiquement l'alimentation de l'ensemble des appareils (sécurité et
+                            économie d'énergie).</p>
                     </div>
 
                     <div class="bg-surfaceHover p-6 rounded-2xl border border-white/5 flex flex-col gap-4">
@@ -1748,7 +2027,10 @@
                             </div>
                             <h4 class="text-lg font-bold text-white">Scène Automatique d'Arrivée</h4>
                         </div>
-                        <p class="text-sm text-textMuted leading-relaxed">Détection de présence déclenchant une mise sous tension sélective. Cela permet d'isoler les besoins énergétiques en n'activant que les équipements strictement utiles à l'instant T, sans allumer l'ensemble des appareils de la pièce.</p>
+                        <p class="text-sm text-textMuted leading-relaxed">Détection de présence déclenchant une mise
+                            sous tension sélective. Cela permet d'isoler les besoins énergétiques en n'activant que les
+                            équipements strictement utiles à l'instant T, sans allumer l'ensemble des appareils de la
+                            pièce.</p>
                     </div>
 
                     <div class="bg-surfaceHover p-6 rounded-2xl border border-white/5 flex flex-col gap-4">
@@ -1758,7 +2040,8 @@
                             </div>
                             <h4 class="text-lg font-bold text-white">Adaptation Lumineuse</h4>
                         </div>
-                        <p class="text-sm text-textMuted leading-relaxed">Régulation automatique du niveau de luminosité et de la teinte de l'éclairage intérieur en fonction de la lumière du jour extérieure.</p>
+                        <p class="text-sm text-textMuted leading-relaxed">Régulation automatique du niveau de luminosité
+                            et de la teinte de l'éclairage intérieur en fonction de la lumière du jour extérieure.</p>
                     </div>
 
                     <div class="bg-surfaceHover p-6 rounded-2xl border border-white/5 flex flex-col gap-4">
@@ -1768,7 +2051,8 @@
                             </div>
                             <h4 class="text-lg font-bold text-white">Régulation Thermique</h4>
                         </div>
-                        <p class="text-sm text-textMuted leading-relaxed">Capteurs de température en temps réel pour analyser la pièce et activer ou désactiver de façon autonome le système de chauffage.</p>
+                        <p class="text-sm text-textMuted leading-relaxed">Capteurs de température en temps réel pour
+                            analyser la pièce et activer ou désactiver de façon autonome le système de chauffage.</p>
                     </div>
 
                     <div class="bg-surfaceHover p-6 rounded-2xl border border-white/5 flex flex-col gap-4">
@@ -1778,7 +2062,9 @@
                             </div>
                             <h4 class="text-lg font-bold text-white">Contrôle Physique Centralisé</h4>
                         </div>
-                        <p class="text-sm text-textMuted leading-relaxed">Boutons physiques programmables pour exécuter des routines domotiques (ex: "Mode Cinéma") synchronisant intelligemment éclairage et alimentation.</p>
+                        <p class="text-sm text-textMuted leading-relaxed">Boutons physiques programmables pour exécuter
+                            des routines domotiques (ex: "Mode Cinéma") synchronisant intelligemment éclairage et
+                            alimentation.</p>
                     </div>
                 </div>
             </div>
@@ -1805,10 +2091,12 @@
                 </div>
                 <h1 class="text-4xl md:text-5xl lg:text-7xl font-bold leading-tight text-white">
                     Casier Connecté RFID : <br>
-                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">Design Barillet Motorisé</span>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">Design
+                        Barillet Motorisé</span>
                 </h1>
                 <p class="text-xl text-textMuted max-w-3xl leading-relaxed">
-                    Conception mécanique sur SolidWorks, impression 3D et programmation Arduino pour un casier rotatif innovant intégrant la recharge de smartphones.
+                    Conception mécanique sur SolidWorks, impression 3D et programmation Arduino pour un casier rotatif
+                    innovant intégrant la recharge de smartphones.
                 </p>
             </div>
         </header>
@@ -1848,7 +2136,8 @@
                         <i data-lucide="cpu" class="w-8 h-8"></i>
                     </div>
                     <h4 class="text-lg font-bold text-white mb-2">Process</h4>
-                    <p class="text-sm text-textMuted">L'Arduino identifie le casier et calcule l'angle de rotation nécessaire.
+                    <p class="text-sm text-textMuted">L'Arduino identifie le casier et calcule l'angle de rotation
+                        nécessaire.
                     </p>
                 </div>
 
@@ -1863,7 +2152,8 @@
                         <i data-lucide="rotate-cw" class="w-8 h-8"></i>
                     </div>
                     <h4 class="text-lg font-bold text-white mb-2">Action</h4>
-                    <p class="text-sm text-textMuted">Le moteur central aligne le bon casier, puis un servomoteur ouvre la porte d'accès.</p>
+                    <p class="text-sm text-textMuted">Le moteur central aligne le bon casier, puis un servomoteur ouvre
+                        la porte d'accès.</p>
                 </div>
             </div>
         </section>
@@ -1879,7 +2169,8 @@
                 </div>
                 <h4 class="text-xl font-bold text-white mb-3">Recharge Intégrée</h4>
                 <p class="text-textMuted leading-relaxed">
-                    Passage de câbles à l'intérieur de l'axe central permettant l'alimentation continue des smartphones stockés dans les compartiments.
+                    Passage de câbles à l'intérieur de l'axe central permettant l'alimentation continue des smartphones
+                    stockés dans les compartiments.
                 </p>
             </div>
 
@@ -1892,7 +2183,8 @@
                 </div>
                 <h4 class="text-xl font-bold text-white mb-3">Cylindre Motorisé</h4>
                 <p class="text-textMuted leading-relaxed">
-                    Structure rotative sous forme de tonneau pilotée par une motorisation centrale, positionnant le compartiment ciblé face à l'unique porte.
+                    Structure rotative sous forme de tonneau pilotée par une motorisation centrale, positionnant le
+                    compartiment ciblé face à l'unique porte.
                 </p>
             </div>
 
@@ -1905,7 +2197,8 @@
                 </div>
                 <h4 class="text-xl font-bold text-white mb-3">Conception 3D</h4>
                 <p class="text-textMuted leading-relaxed">
-                    Modélisation intégrale sur SolidWorks et impression 3D. Assemblage avec composants Arduino et servomoteurs.
+                    Modélisation intégrale sur SolidWorks et impression 3D. Assemblage avec composants Arduino et
+                    servomoteurs.
                 </p>
             </div>
         </section>
@@ -2060,7 +2353,8 @@
     </main>
 
     <!-- ================= ONGLET CONTACT ================= -->
-    <main id="section-contact" class="tab-section hidden-page w-full max-w-3xl mt-24 space-y-8 z-10 pb-24 transition-all duration-500">
+    <main id="section-contact"
+        class="tab-section hidden-page w-full max-w-3xl mt-24 space-y-8 z-10 pb-24 transition-all duration-500">
         <!-- ... (Contenu Contact conservé) ... -->
         <header class="animate-slide-up text-center mb-12">
             <h1 class="text-4xl md:text-5xl font-bold mb-4">Restons en <span class="text-white">Contact</span></h1>
@@ -2113,7 +2407,8 @@
         </div>
 
         <!-- FORMULAIRE DE CONTACT -->
-        <div class="mt-8 bg-surface border border-border p-8 rounded-3xl animate-slide-up" style="animation-delay: 0.2s;">
+        <div class="mt-8 bg-surface border border-border p-8 rounded-3xl animate-slide-up"
+            style="animation-delay: 0.2s;">
             <h2 class="text-2xl font-bold mb-6 text-white flex items-center gap-2">
                 <i data-lucide="send" class="w-6 h-6 text-blue-400"></i>
                 Envoyez-moi un message
@@ -2123,23 +2418,30 @@
                 <input type="hidden" name="_subject" value="Nouveau message depuis le Portfolio !">
                 <input type="hidden" name="_template" value="table">
                 <input type="hidden" name="_captcha" value="false">
-                
+
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div class="space-y-2">
                         <label for="name" class="text-sm font-medium text-textMuted">Nom</label>
-                        <input type="text" id="name" name="name" required class="w-full bg-surfaceHover border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-blue-500 transition-colors" placeholder="Jean Dupont">
+                        <input type="text" id="name" name="name" required
+                            class="w-full bg-surfaceHover border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-blue-500 transition-colors"
+                            placeholder="Jean Dupont">
                     </div>
                     <div class="space-y-2">
                         <label for="email" class="text-sm font-medium text-textMuted">Email</label>
-                        <input type="email" id="email" name="email" required class="w-full bg-surfaceHover border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-blue-500 transition-colors" placeholder="jean@exemple.com">
+                        <input type="email" id="email" name="email" required
+                            class="w-full bg-surfaceHover border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-blue-500 transition-colors"
+                            placeholder="jean@exemple.com">
                     </div>
                 </div>
                 <div class="space-y-2">
                     <label for="message" class="text-sm font-medium text-textMuted">Message</label>
-                    <textarea id="message" name="message" required rows="5" class="w-full bg-surfaceHover border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-blue-500 transition-colors resize-none" placeholder="Bonjour Marius..."></textarea>
+                    <textarea id="message" name="message" required rows="5"
+                        class="w-full bg-surfaceHover border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-blue-500 transition-colors resize-none"
+                        placeholder="Bonjour Marius..."></textarea>
                 </div>
-                
-                <button type="submit" class="w-full inline-flex items-center justify-center gap-3 px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 text-white font-bold rounded-xl transition-all duration-300 shadow-[0_0_20px_rgba(59,130,246,0.3)] hover:shadow-[0_0_30px_rgba(168,85,247,0.5)] transform hover:-translate-y-1">
+
+                <button type="submit"
+                    class="w-full inline-flex items-center justify-center gap-3 px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 text-white font-bold rounded-xl transition-all duration-300 shadow-[0_0_20px_rgba(59,130,246,0.3)] hover:shadow-[0_0_30px_rgba(168,85,247,0.5)] transform hover:-translate-y-1">
                     <span>Envoyer le message</span>
                     <i data-lucide="send" class="w-5 h-5"></i>
                 </button>
@@ -2148,6 +2450,406 @@
     </main>
 
 
+    <!-- ================= PAGE KART À HÉLICE ================= -->
+    <main id="kartPage" class="hidden-page w-full max-w-7xl mt-24 space-y-24 z-20 pb-24">
+        <!-- 1. Hero Section -->
+        <header class="animate-slide-up relative overflow-hidden bg-surface border border-border rounded-3xl p-8 md:p-12">
+            <div class="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-red-900/10 to-transparent pointer-events-none"></div>
+            
+            <div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-12">
+                <div class="lg:col-span-8 space-y-8">
+                    <div>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="tech-pill border-red-500/30 text-red-400 bg-red-500/5">Infrarouge</span>
+                            <span class="tech-pill border-blue-500/30 text-blue-400 bg-blue-500/5">Microcontrôleur</span>
+                            <span class="tech-pill border-orange-500/30 text-orange-400 bg-orange-500/5">Prototypage</span>
+                        </div>
+                        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-white mb-4">
+                            Kart à Hélice : <br>
+                            <span class="text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-orange-500">Conception Télécommandée</span>
+                        </h1>
+                        <p class="text-xl text-textMuted max-w-3xl leading-relaxed">
+                            Développement complet d'un mini-kart à propulsion par hélice, piloté à distance via une liaison infrarouge sécurisée (Protocole NEC).
+                        </p>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-8">
+                        <div class="p-4 bg-surfaceHover/50 backdrop-blur-sm rounded-xl border border-white/5">
+                            <div class="flex items-center gap-2 mb-2 text-red-400">
+                                <i data-lucide="crosshair" class="w-4 h-4"></i>
+                                <span class="text-xs font-bold uppercase tracking-wider">Objectif</span>
+                            </div>
+                            <p class="text-sm font-medium text-white">Course en Intérieur</p>
+                        </div>
+                        <div class="p-4 bg-surfaceHover/50 backdrop-blur-sm rounded-xl border border-white/5">
+                            <div class="flex items-center gap-2 mb-2 text-orange-400">
+                                <i data-lucide="clock" class="w-4 h-4"></i>
+                                <span class="text-xs font-bold uppercase tracking-wider">Durée Allouée</span>
+                            </div>
+                            <p class="text-sm font-medium text-white">58 Heures</p>
+                        </div>
+                        <div class="p-4 bg-surfaceHover/50 backdrop-blur-sm rounded-xl border border-white/5">
+                            <div class="flex items-center gap-2 mb-2 text-green-400">
+                                <i data-lucide="coins" class="w-4 h-4"></i>
+                                <span class="text-xs font-bold uppercase tracking-wider">Budget Max</span>
+                            </div>
+                            <p class="text-sm font-medium text-white">160 € / prototype</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- 2. Architecture & Exigences -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-12 animate-slide-up" style="animation-delay: 0.1s;">
+            <div class="space-y-6">
+                <h3 class="text-2xl font-bold text-white flex items-center gap-3">
+                    <i data-lucide="cpu" class="text-red-400 w-6 h-6"></i> Architecture du Système
+                </h3>
+                <div class="space-y-4 text-textMuted leading-relaxed text-lg">
+                    <p>
+                        <strong class="text-white">Émetteur (Télécommande) :</strong> Doté de deux potentiomètres pour diriger les roues et régler la puissance moteur. Transmission sécurisée jusqu'à 10 mètres.
+                    </p>
+                    <p>
+                        <strong class="text-white">Récepteur (Kart) :</strong> Interprète les trames NEC reçues, pilote un moteur Brushless (PWM) et un servomoteur de direction (-/+ 30°). Il intègre également une sécurité de coupure moteur en cas de perte de signal.
+                    </p>
+                    <p>
+                        <strong class="text-white">Énergie :</strong> Alimentation par accumulateur Li-Po 2S garantissant jusqu'à 60 min d'autonomie pour la télécommande et 15 min pour le kart.
+                    </p>
+                </div>
+            </div>
+
+            <div class="bg-surfaceHover p-8 rounded-3xl border border-border flex flex-col justify-center gap-6">
+                <h4 class="text-white font-bold text-center mb-6">Protocole de Transmission NEC</h4>
+                <div class="space-y-4">
+                    <div class="flex items-center gap-4 bg-black/40 p-4 rounded-xl border border-white/5">
+                        <div class="w-12 h-12 bg-red-500/10 rounded-full flex items-center justify-center text-red-400 shrink-0">
+                            <i data-lucide="radio" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <p class="text-sm font-bold text-white">Trame Address (8 bits)</p>
+                            <p class="text-sm text-textMuted mt-1">1 bit Klaxon + 7 bits ID d'Équipe</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4 bg-black/40 p-4 rounded-xl border border-white/5">
+                        <div class="w-12 h-12 bg-orange-500/10 rounded-full flex items-center justify-center text-orange-400 shrink-0">
+                            <i data-lucide="gamepad-2" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <p class="text-sm font-bold text-white">Trame Data (8 bits)</p>
+                            <p class="text-sm text-textMuted mt-1">3 bits Puissance Moteur + 5 bits Direction</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Documents Annexes -->
+        <section class="animate-slide-up" style="animation-delay: 0.15s;">
+            <div class="border-t border-border my-12"></div>
+            <h3 class="text-3xl font-bold text-white mb-6 text-center flex justify-center items-center gap-3">
+                <i data-lucide="folder-open" class="text-red-500 w-8 h-8"></i>
+                Dossiers d'Ingénierie
+            </h3>
+            <p class="text-center text-textMuted mb-12 max-w-2xl mx-auto">
+                Ce projet suit le cycle de développement qualité ISO9001. Tous les livrables techniques sont disponibles au téléchargement.
+            </p>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                <!-- CDC -->
+                <a href="./data/documents%20kart%20helice/KAH_CDC_V2.pdf" target="_blank"
+                    onclick="setTimeout(() => { const a = document.createElement('a'); a.href='./data/documents%20kart%20helice/KAH_CDC_V2.pdf'; a.download='KAH_CDC_V2.pdf'; a.click(); }, 500);"
+                    class="bg-surface hover:bg-surfaceHover border border-border hover:border-red-500/50 p-6 rounded-2xl flex flex-col items-center justify-center gap-3 transition-all group shadow-lg hover:shadow-red-900/20">
+                    <div class="w-14 h-14 rounded-xl bg-red-500/10 flex items-center justify-center text-red-400 group-hover:scale-110 transition-transform">
+                        <i data-lucide="file-text" class="w-7 h-7"></i>
+                    </div>
+                    <span class="text-sm font-bold text-white text-center mt-2">Cahier des Charges<br><span class="text-xs text-textMuted font-normal mt-1 block">CDC</span></span>
+                </a>
+
+                <!-- DDC -->
+                <a href="./data/documents%20kart%20helice/KAH_DDC_EQ42.pdf" target="_blank"
+                    onclick="setTimeout(() => { const a = document.createElement('a'); a.href='./data/documents%20kart%20helice/KAH_DDC_EQ42.pdf'; a.download='KAH_DDC_EQ42.pdf'; a.click(); }, 500);"
+                    class="bg-surface hover:bg-surfaceHover border border-border hover:border-purple-500/50 p-6 rounded-2xl flex flex-col items-center justify-center gap-3 transition-all group shadow-lg hover:shadow-purple-900/20">
+                    <div class="w-14 h-14 rounded-xl bg-purple-500/10 flex items-center justify-center text-purple-400 group-hover:scale-110 transition-transform">
+                        <i data-lucide="pen-tool" class="w-7 h-7"></i>
+                    </div>
+                    <span class="text-sm font-bold text-white text-center mt-2">Dossier Conception<br><span class="text-xs text-textMuted font-normal mt-1 block">DDC</span></span>
+                </a>
+
+                <!-- DDF EMTT -->
+                <a href="./data/documents%20kart%20helice/KAH_DDF_EMTT.docx.pdf" target="_blank"
+                    onclick="setTimeout(() => { const a = document.createElement('a'); a.href='./data/documents%20kart%20helice/KAH_DDF_EMTT.docx.pdf'; a.download='KAH_DDF_EMTT.pdf'; a.click(); }, 500);"
+                    class="bg-surface hover:bg-surfaceHover border border-border hover:border-orange-500/50 p-6 rounded-2xl flex flex-col items-center justify-center gap-3 transition-all group shadow-lg hover:shadow-orange-900/20">
+                    <div class="w-14 h-14 rounded-xl bg-orange-500/10 flex items-center justify-center text-orange-400 group-hover:scale-110 transition-transform">
+                        <i data-lucide="wrench" class="w-7 h-7"></i>
+                    </div>
+                    <span class="text-sm font-bold text-white text-center mt-2">Fabrication Émetteur<br><span class="text-xs text-textMuted font-normal mt-1 block">DDF EMTT</span></span>
+                </a>
+
+                <!-- DDF RCPT -->
+                <a href="./data/documents%20kart%20helice/KAH_DDF_RCPT_EQ42.pdf" target="_blank"
+                    onclick="setTimeout(() => { const a = document.createElement('a'); a.href='./data/documents%20kart%20helice/KAH_DDF_RCPT_EQ42.pdf'; a.download='KAH_DDF_RCPT_EQ42.pdf'; a.click(); }, 500);"
+                    class="bg-surface hover:bg-surfaceHover border border-border hover:border-green-500/50 p-6 rounded-2xl flex flex-col items-center justify-center gap-3 transition-all group shadow-lg hover:shadow-green-900/20">
+                    <div class="w-14 h-14 rounded-xl bg-green-500/10 flex items-center justify-center text-green-400 group-hover:scale-110 transition-transform">
+                        <i data-lucide="cpu" class="w-7 h-7"></i>
+                    </div>
+                    <span class="text-sm font-bold text-white text-center mt-2">Fabrication Récepteur<br><span class="text-xs text-textMuted font-normal mt-1 block">DDF RCPT</span></span>
+                </a>
+
+                <!-- Code C/C++ EMTT -->
+                <a href="./data/documents%20kart%20helice/programme/KAH_EMTT_EQ42.ino" target="_blank"
+                    onclick="setTimeout(() => { const a = document.createElement('a'); a.href='./data/documents%20kart%20helice/programme/KAH_EMTT_EQ42.ino'; a.download='KAH_EMTT_EQ42.ino'; a.click(); }, 500);"
+                    class="bg-surface hover:bg-surfaceHover border border-border hover:border-cyan-500/50 p-6 rounded-2xl flex flex-col items-center justify-center gap-3 transition-all group shadow-lg hover:shadow-cyan-900/20">
+                    <div class="w-14 h-14 rounded-xl bg-cyan-500/10 flex items-center justify-center text-cyan-400 group-hover:scale-110 transition-transform">
+                        <i data-lucide="code-2" class="w-7 h-7"></i>
+                    </div>
+                    <span class="text-sm font-bold text-white text-center mt-2">Code Émetteur<br><span class="text-xs text-textMuted font-normal mt-1 block">Programme C/C++</span></span>
+                </a>
+
+                <!-- Code C/C++ RCPT -->
+                <a href="./data/documents%20kart%20helice/programme/Informatique_KAH_RCPT_EQ42.ino" target="_blank"
+                    onclick="setTimeout(() => { const a = document.createElement('a'); a.href='./data/documents%20kart%20helice/programme/Informatique_KAH_RCPT_EQ42.ino'; a.download='Informatique_KAH_RCPT_EQ42.ino'; a.click(); }, 500);"
+                    class="bg-surface hover:bg-surfaceHover border border-border hover:border-teal-500/50 p-6 rounded-2xl flex flex-col items-center justify-center gap-3 transition-all group shadow-lg hover:shadow-teal-900/20">
+                    <div class="w-14 h-14 rounded-xl bg-teal-500/10 flex items-center justify-center text-teal-400 group-hover:scale-110 transition-transform">
+                        <i data-lucide="file-code" class="w-7 h-7"></i>
+                    </div>
+                    <span class="text-sm font-bold text-white text-center mt-2">Code Récepteur<br><span class="text-xs text-textMuted font-normal mt-1 block">Programme C/C++</span></span>
+                </a>
+            </div>
+        </section>
+
+        <!-- 4. Protocole de Réalisation -->
+        <section class="animate-slide-up" style="animation-delay: 0.2s;">
+            <div class="border-t border-border my-12"></div>
+            <h3 class="text-3xl font-bold text-white mb-12 text-center">Protocole de Réalisation</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 relative">
+                <!-- Étape 01 -->
+                <div class="group bg-surface p-6 rounded-2xl border border-border hover:border-blue-500/50 transition-all duration-300 relative overflow-hidden flex flex-col h-full">
+                    <div class="absolute top-4 right-4 text-[40px] font-bold text-white/5 font-mono group-hover:text-blue-500/10 transition-colors">01</div>
+                    <div class="w-10 h-10 rounded-xl bg-blue-500/10 flex items-center justify-center mb-4 text-blue-400 group-hover:scale-110 transition-transform">
+                        <i data-lucide="file-text" class="w-5 h-5"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-white mb-2">Planification & CDC</h4>
+                    <p class="text-sm text-textMuted leading-relaxed flex-grow">Analyse minutieuse du cahier des charges, établissement des contraintes budgétaires (160€ max) et temporelles (58h).</p>
+                </div>
+
+                <!-- Étape 02 : Conception Électronique (CLIQUABLE) -->
+                <div onclick="openGallery('simulationGallery')"
+                    class="group bg-surface p-6 rounded-2xl border border-border hover:border-purple-500/50 transition-all duration-300 relative overflow-hidden cursor-pointer shadow-lg hover:shadow-purple-900/20 flex flex-col h-full">
+                    <div class="absolute top-4 right-4 text-[40px] font-bold text-white/5 font-mono group-hover:text-purple-500/10 transition-colors">02</div>
+                    <div class="w-10 h-10 rounded-xl bg-purple-500/10 flex items-center justify-center mb-4 text-purple-400 group-hover:scale-110 transition-transform">
+                        <i data-lucide="laptop-2" class="w-5 h-5"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-white mb-2">Conception Électronique</h4>
+                    <p class="text-sm text-textMuted leading-relaxed mb-6 flex-grow">Création des schémas théoriques pour l'émetteur (télécommande) et le récepteur (kart) incluant la gestion d'énergie Li-Po.</p>
+
+                    <div class="mt-auto pt-4 border-t border-white/5">
+                        <button
+                            class="w-full py-2 bg-purple-500/10 hover:bg-purple-500 text-purple-400 hover:text-white rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-2">
+                            <i data-lucide="image" class="w-4 h-4"></i> VOIR LES PHOTOS
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Étape 03 : Fabrication des PCB (CLIQUABLE) -->
+                <div onclick="openGallery('fabricationGallery')"
+                    class="group bg-surface p-6 rounded-2xl border border-border hover:border-orange-500/50 transition-all duration-300 relative overflow-hidden cursor-pointer shadow-lg hover:shadow-orange-900/20 flex flex-col h-full">
+                    <div class="absolute top-4 right-4 text-[40px] font-bold text-white/5 font-mono group-hover:text-orange-500/10 transition-colors">03</div>
+                    <div class="w-10 h-10 rounded-xl bg-orange-500/10 flex items-center justify-center mb-4 text-orange-400 group-hover:scale-110 transition-transform">
+                        <i data-lucide="cpu" class="w-5 h-5"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-white mb-2">Fabrication des PCB</h4>
+                    <p class="text-sm text-textMuted leading-relaxed mb-6 flex-grow">Routage des cartes, impression des typons, insolation UV et gravure pour obtenir les circuits imprimés finaux.</p>
+
+                    <div class="mt-auto pt-4 border-t border-white/5">
+                        <button
+                            class="w-full py-2 bg-orange-500/10 hover:bg-orange-500 text-orange-400 hover:text-white rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-2">
+                            <i data-lucide="image" class="w-4 h-4"></i> VOIR LES PHOTOS
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Étape 04 : Impression 3D & Mécanique (CLIQUABLE) -->
+                <div onclick="openGallery('usinageGallery')"
+                    class="group bg-surface p-6 rounded-2xl border border-border hover:border-red-500/50 transition-all duration-300 relative overflow-hidden cursor-pointer shadow-lg hover:shadow-red-900/20 flex flex-col h-full">
+                    <div class="absolute top-4 right-4 text-[40px] font-bold text-white/5 font-mono group-hover:text-red-500/10 transition-colors">04</div>
+                    <div class="w-10 h-10 rounded-xl bg-red-500/10 flex items-center justify-center mb-4 text-red-400 group-hover:scale-110 transition-transform">
+                        <i data-lucide="box" class="w-5 h-5"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-white mb-2">Impression 3D & Mécanique</h4>
+                    <p class="text-sm text-textMuted leading-relaxed mb-6 flex-grow">Conception CAO 3D et impression des carters de protection et supports mécaniques assurant la robustesse du kart.</p>
+
+                    <div class="mt-auto pt-4 border-t border-white/5">
+                        <button
+                            class="w-full py-2 bg-red-500/10 hover:bg-red-500 text-red-400 hover:text-white rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-2">
+                            <i data-lucide="image" class="w-4 h-4"></i> VOIR LES PHOTOS
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Étape 05 -->
+                <div class="group bg-surface p-6 rounded-2xl border border-border hover:border-cyan-500/50 transition-all duration-300 relative overflow-hidden flex flex-col h-full">
+                    <div class="absolute top-4 right-4 text-[40px] font-bold text-white/5 font-mono group-hover:text-cyan-500/10 transition-colors">05</div>
+                    <div class="w-10 h-10 rounded-xl bg-cyan-500/10 flex items-center justify-center mb-4 text-cyan-400 group-hover:scale-110 transition-transform">
+                        <i data-lucide="code-2" class="w-5 h-5"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-white mb-2">Programmation C/C++</h4>
+                    <p class="text-sm text-textMuted leading-relaxed flex-grow">Développement du code embarqué : encodage/décodage de la trame IR NEC et pilotage PWM du moteur Brushless.</p>
+                </div>
+
+                <!-- Étape 06 : Vérification & Tests (CLIQUABLE) -->
+                <div onclick="openGallery('kartVerifGallery')"
+                    class="group bg-surface p-6 rounded-2xl border border-border hover:border-green-500/50 transition-all duration-300 relative overflow-hidden cursor-pointer shadow-lg hover:shadow-green-900/20 flex flex-col h-full">
+                    <div class="absolute top-4 right-4 text-[40px] font-bold text-white/5 font-mono group-hover:text-green-500/10 transition-colors">06</div>
+                    <div class="w-10 h-10 rounded-xl bg-green-500/10 flex items-center justify-center mb-4 text-green-400 group-hover:scale-110 transition-transform">
+                        <i data-lucide="flag" class="w-5 h-5"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-white mb-2">Vérification & Tests</h4>
+                    <p class="text-sm text-textMuted leading-relaxed mb-6 flex-grow">Tests de portée infrarouge (>10m), validation du débattement des roues et essai dynamique de la propulsion par hélice.</p>
+
+                    <div class="mt-auto pt-4 border-t border-white/5">
+                        <button
+                            class="w-full py-2 bg-green-500/10 hover:bg-green-500 text-green-400 hover:text-white rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-2">
+                            <i data-lucide="image" class="w-4 h-4"></i> VOIR LES PHOTOS
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Environnement Technique -->
+        <section class="animate-slide-up" style="animation-delay: 0.3s;">
+            <div class="border-t border-border my-12"></div>
+            <h3 class="text-2xl font-bold text-white mb-8">Environnement Technique</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Software -->
+                <div class="bg-surface border border-border p-6 rounded-2xl hover:border-white/10 transition-colors">
+                    <div class="flex items-center gap-3 mb-6 text-blue-400">
+                        <i data-lucide="monitor" class="w-6 h-6"></i>
+                        <h4 class="font-bold text-white">Software & CAO</h4>
+                    </div>
+                    <ul class="space-y-4">
+                        <li class="text-sm text-textMuted">
+                            <strong class="block text-white mb-1">Proteus (ISIS/ARES)</strong>
+                            Simulation analogique et routage PCB.
+                        </li>
+                        <li class="text-sm text-textMuted">
+                            <strong class="block text-white mb-1">SolidWorks</strong>
+                            Modélisation 3D du châssis et des pièces mécaniques.
+                        </li>
+                        <li class="text-sm text-textMuted">
+                            <strong class="block text-white mb-1">IDE C/C++</strong>
+                            Développement du firmware embarqué.
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Composants -->
+                <div class="bg-surface border border-border p-6 rounded-2xl hover:border-white/10 transition-colors">
+                    <div class="flex items-center gap-3 mb-6 text-purple-400">
+                        <i data-lucide="settings-2" class="w-6 h-6"></i>
+                        <h4 class="font-bold text-white">Composants Clés</h4>
+                    </div>
+                    <ul class="space-y-4">
+                        <li class="text-sm text-textMuted">
+                            <strong class="block text-white mb-1">Microcontrôleur</strong>
+                            Traitement du signal et génération PWM.
+                        </li>
+                        <li class="text-sm text-textMuted">
+                            <strong class="block text-white mb-1">Moteur Brushless & ESC</strong>
+                            Propulsion par hélice haute vitesse.
+                        </li>
+                        <li class="text-sm text-textMuted">
+                            <strong class="block text-white mb-1">Diodes IR & Récepteur</strong>
+                            Transmission des trames protocolaires NEC.
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Outils -->
+                <div class="bg-surface border border-border p-6 rounded-2xl hover:border-white/10 transition-colors">
+                    <div class="flex items-center gap-3 mb-6 text-orange-400">
+                        <i data-lucide="wrench" class="w-6 h-6"></i>
+                        <h4 class="font-bold text-white">Fabrication & Tests</h4>
+                    </div>
+                    <ul class="space-y-4">
+                        <li class="text-sm text-textMuted">
+                            <strong class="block text-white mb-1">Insoleuse UV / Graveuse</strong>
+                            Création des circuits imprimés de l'émetteur et récepteur.
+                        </li>
+                        <li class="text-sm text-textMuted">
+                            <strong class="block text-white mb-1">Imprimante 3D</strong>
+                            Fabrication rapide des supports.
+                        </li>
+                        <li class="text-sm text-textMuted">
+                            <strong class="block text-white mb-1">Oscilloscope</strong>
+                            Vérification des signaux PWM et trames IR.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ================= GALERIE OVERLAY (KART VERIF) ================= -->
+    <div id="kartVerifGallery"
+        class="fixed inset-0 z-[60] bg-black/90 hidden flex flex-col items-center justify-center p-4 backdrop-blur-sm animate-fade-in">
+        <button onclick="closeGallery('kartVerifGallery')"
+            class="absolute top-6 right-6 text-white hover:text-red-400 transition-colors">
+            <i data-lucide="x" class="w-8 h-8"></i>
+        </button>
+
+        <h2 class="text-2xl font-bold text-white mb-8">Tests & Validation (Kart)</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl w-full h-[80vh] overflow-y-auto p-4">
+            <!-- Test 1 -->
+            <div class="flex flex-col gap-4">
+                <div class="bg-surface border border-white/10 rounded-2xl overflow-hidden aspect-video">
+                    <img src="./data/documents%20kart%20helice/photo/v&rification%20mesure.jpg" alt="Mesure 1"
+                        class="w-full h-full object-contain bg-black/50">
+                </div>
+                <p class="text-sm text-textMuted text-center">Mesure de la carte émettrice (120mm)</p>
+            </div>
+
+            <!-- Test 2 -->
+            <div class="flex flex-col gap-4">
+                <div class="bg-surface border border-white/10 rounded-2xl overflow-hidden aspect-video">
+                    <img src="./data/documents%20kart%20helice/photo/véréifcation%20mesure.jpg" alt="Mesure 2"
+                        class="w-full h-full object-contain bg-black/50">
+                </div>
+                <p class="text-sm text-textMuted text-center">Mesure de la carte émettrice (80mm)</p>
+            </div>
+
+            <!-- Test 3 -->
+            <div class="flex flex-col gap-4">
+                <div class="bg-surface border border-white/10 rounded-2xl overflow-hidden aspect-video">
+                    <img src="./data/documents%20kart%20helice/photo/véfircation%201.jpg" alt="Test communication"
+                        class="w-full h-full object-contain bg-black/50">
+                </div>
+                <p class="text-sm text-textMuted text-center">Test de communication avec oscilloscope</p>
+            </div>
+
+            <!-- Test 4 -->
+            <div class="flex flex-col gap-4">
+                <div class="bg-surface border border-white/10 rounded-2xl overflow-hidden aspect-video">
+                    <img src="./data/documents%20kart%20helice/photo/vérification%202.jpg" alt="Signal PWM"
+                        class="w-full h-full object-contain bg-black/50">
+                </div>
+                <p class="text-sm text-textMuted text-center">Vérification du signal sur oscilloscope</p>
+            </div>
+
+            <!-- Test 5 -->
+            <div class="flex flex-col gap-4">
+                <div class="bg-surface border border-white/10 rounded-2xl overflow-hidden aspect-video">
+                    <img src="./data/documents%20kart%20helice/photo/vérification.jpg" alt="Test sous tension"
+                        class="w-full h-full object-contain bg-black/50">
+                </div>
+                <p class="text-sm text-textMuted text-center">Test de mise sous tension de l'émetteur</p>
+            </div>
+        </div>
+    </div>
 
     <script>
         lucide.createIcons();
@@ -2160,12 +2862,12 @@
             if (!TABS.includes(hash)) {
                 hash = 'accueil'; // default
             }
-            
+
             // Hide project overlays if any are open
-            const projectPages = ['missionSophiePage', 'caltrackerPage', 'saePage', 'sumoPage', 'lockerPage', 'makerPage', 'ambilightPage', 'smartSpeakerPage', 'lyceeProjectsPage'];
+            const projectPages = ['missionSophiePage', 'caltrackerPage', 'saePage', 'sumoPage', 'lockerPage', 'makerPage', 'ambilightPage', 'smartSpeakerPage', 'lyceeProjectsPage', 'kartPage'];
             projectPages.forEach(id => {
                 const p = document.getElementById(id);
-                if(p && !p.classList.contains('hidden-page')) {
+                if (p && !p.classList.contains('hidden-page')) {
                     p.classList.add('hidden-page');
                     p.style.opacity = '0';
                 }
@@ -2173,7 +2875,7 @@
 
             document.getElementById('projectNav').classList.add('hidden');
             document.getElementById('projectNav').classList.remove('flex');
-            
+
             // Show main nav
             document.getElementById('mainNav').classList.remove('hidden');
 
@@ -2196,7 +2898,7 @@
             updateNavState(hash);
             window.scrollTo(0, 0);
         }
-        
+
         function updateNavState(activeTab) {
             const navLinks = document.querySelectorAll('.nav-link');
             navLinks.forEach(link => {
@@ -2263,7 +2965,7 @@
             const gallery = document.getElementById(galleryId);
             gallery.classList.remove('hidden');
             lucide.createIcons();
-            
+
             // Conversion HEIC vers JPG (Automatique)
             const images = gallery.querySelectorAll('img[src$=".HEIC"], img[src$=".heic"]');
             for (const img of images) {
@@ -2508,12 +3210,12 @@
             const overlay = document.getElementById('posterZoomOverlay');
             const img = document.getElementById('zoomedImage');
             const content = document.getElementById('zoomContent');
-            
+
             img.src = src;
             posterScale = 1;
             posterPos = { x: 0, y: 0 };
             updatePosterTransform();
-            
+
             overlay.classList.remove('hidden');
             overlay.classList.add('flex');
             lucide.createIcons();
@@ -2561,6 +3263,27 @@
             const delta = e.deltaY > 0 ? -0.1 : 0.1;
             zoomPoster(delta);
         }, { passive: false });
+
+        // ================= FILTER PROJECTS =================
+        function filterProjects(category, btnElement) {
+            const btns = document.querySelectorAll('.project-filter-btn');
+            btns.forEach(btn => {
+                btn.classList.remove('bg-white/10', 'text-white', 'border-white/20');
+                btn.classList.add('bg-transparent', 'text-textMuted', 'border-white/10');
+            });
+            
+            btnElement.classList.remove('bg-transparent', 'text-textMuted', 'border-white/10');
+            btnElement.classList.add('bg-white/10', 'text-white', 'border-white/20');
+
+            const projects = document.querySelectorAll('.project-item');
+            projects.forEach(project => {
+                if (category === 'all' || project.getAttribute('data-category') === category) {
+                    project.style.display = 'block';
+                } else {
+                    project.style.display = 'none';
+                }
+            });
+        }
 
         document.addEventListener('DOMContentLoaded', () => {
             // Force always returning to home page (accueil) on reload or direct link
