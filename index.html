@@ -126,6 +126,7 @@
     <nav class="fixed top-6 z-40 bg-surface/80 backdrop-blur-md border border-border rounded-full px-6 py-3 flex items-center gap-8 shadow-lg animate-fade-in transition-all duration-300"
         id="mainNav">
         <a href="#accueil" data-tab="accueil" class="nav-link text-sm font-medium text-white transition-colors">Accueil</a>
+        <a href="#competences" data-tab="competences" class="nav-link text-sm font-medium text-textMuted hover:text-white transition-colors">Compétences</a>
         <a href="#projets" data-tab="projets" class="nav-link text-sm font-medium text-textMuted hover:text-white transition-colors">Projets</a>
         <a href="#contact" data-tab="contact" class="nav-link bg-transparent text-white border border-white/20 px-4 py-1.5 rounded-full text-sm font-bold hover:bg-white hover:text-black transition-colors">Contact</a>
     </nav>
@@ -252,8 +253,12 @@
                 </div>
             </div>
         </section>
+    </main>
 
-        <!-- COMPÉTENCES (Intégré ici) -->
+    <!-- ================= ONGLET COMPÉTENCES ================= -->
+    <main id="section-competences" class="tab-section hidden-page w-full max-w-6xl mt-24 md:mt-32 space-y-24 z-10 transition-all duration-500">
+
+        <!-- COMPÉTENCES -->
         <section class="space-y-12 animate-slide-up">
             <h2 class="text-3xl font-semibold text-white">Compétences</h2>
             
@@ -2153,7 +2158,7 @@
         lucide.createIcons();
 
         // ================= SPA HASH ROUTING =================
-        const TABS = ['accueil', 'projets', 'contact'];
+        const TABS = ['accueil', 'competences', 'projets', 'contact'];
 
         function handleHashChange() {
             let hash = window.location.hash.replace('#', '');
